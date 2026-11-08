@@ -62,7 +62,7 @@ a:hover { color: var(--blue-dark); }
 .topbar-inner {
     max-width: var(--page-max); height: 100%; margin: 0 auto;
     padding: 0 var(--gutter);
-    display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+    display: flex; align-items: center; justify-content: center; gap: 1.25rem;
 }
 .brand { color: #fff; text-decoration: none; font-weight: 800; font-size: 1.05rem; display: flex; gap: 0.5rem; align-items: center; }
 .brand i { color: #60a5fa; }
