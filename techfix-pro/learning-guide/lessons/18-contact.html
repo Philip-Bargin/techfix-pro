@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Contact Page: Forms, Map &amp; FAQ · TechFix Pro HTML &amp; CSS Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/guide.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="../index.html"><i class="fas fa-microchip"></i> TechFix Pro <span>HTML &amp; CSS Guide</span></a>
+        <a class="topbar-link" href="../solution/index.html" target="_blank"><i class="fas fa-eye"></i> <span>View finished site</span></a>
+    </header>
+    <div class="layout">
+        <aside class="sidebar">
+            <details class="toc-mobile">
+                <summary><i class="fas fa-list"></i> All lessons</summary>
+                <p class="toc-part">Start Here</p><ol class="toc-list">
+<li><a href="../index.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Welcome &amp; how to use this guide</span></a></li>
+</ol>
+<p class="toc-part">Part 1 · Getting Started</p><ol class="toc-list">
+<li><a href="../lessons/01-setup.html"><span class="toc-num">1</span><span>Setting up your computer</span></a></li>
+<li><a href="../lessons/02-html-basics.html"><span class="toc-num">2</span><span>HTML basics</span></a></li>
+<li><a href="../lessons/03-css-basics.html"><span class="toc-num">3</span><span>CSS basics</span></a></li>
+<li><a href="../lessons/04-project-setup.html"><span class="toc-num">4</span><span>Creating the project</span></a></li>
+</ol>
+<p class="toc-part">Part 2 · Shared Styles &amp; Layout</p><ol class="toc-list">
+<li><a href="../lessons/05-design-system.html"><span class="toc-num">5</span><span>The design system</span></a></li>
+<li><a href="../lessons/06-buttons-headers.html"><span class="toc-num">6</span><span>Buttons &amp; headings</span></a></li>
+<li><a href="../lessons/07-navbar.html"><span class="toc-num">7</span><span>The navigation bar</span></a></li>
+<li><a href="../lessons/08-footer.html"><span class="toc-num">8</span><span>The footer</span></a></li>
+<li><a href="../lessons/09-responsive.html"><span class="toc-num">9</span><span>Responsive design &amp; animation</span></a></li>
+</ol>
+<p class="toc-part">Part 3 · Building the Pages</p><ol class="toc-list">
+<li><a href="../lessons/10-home-hero.html"><span class="toc-num">10</span><span>Home: hero</span></a></li>
+<li><a href="../lessons/11-home-services-about.html"><span class="toc-num">11</span><span>Home: services &amp; about</span></a></li>
+<li><a href="../lessons/12-home-news-newsletter.html"><span class="toc-num">12</span><span>Home: news &amp; newsletter</span></a></li>
+<li><a href="../lessons/13-home-testimonials-clients.html"><span class="toc-num">13</span><span>Home: testimonials &amp; clients</span></a></li>
+<li><a href="../lessons/14-about.html"><span class="toc-num">14</span><span>About page</span></a></li>
+<li><a href="../lessons/15-services.html"><span class="toc-num">15</span><span>Services page</span></a></li>
+<li><a href="../lessons/16-blog.html"><span class="toc-num">16</span><span>Blog page</span></a></li>
+<li><a href="../lessons/17-gallery.html"><span class="toc-num">17</span><span>Gallery page</span></a></li>
+<li><a href="../lessons/18-contact.html" aria-current="page" class="current"><span class="toc-num">18</span><span>Contact page</span></a></li>
+</ol>
+<p class="toc-part">Part 4 · Polish &amp; Practice</p><ol class="toc-list">
+<li><a href="../lessons/19-images-organization.html"><span class="toc-num">19</span><span>Images &amp; organisation</span></a></li>
+<li><a href="../lessons/20-troubleshooting.html"><span class="toc-num">20</span><span>Troubleshooting guide</span></a></li>
+<li><a href="../lessons/21-final-checklist.html"><span class="toc-num">21</span><span>Exercises &amp; final checklist</span></a></li>
+<li><a href="../lessons/glossary.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Glossary of terms</span></a></li>
+</ol>
+<p class="toc-part">Reference code</p><ol class="toc-list toc-ref">
+<li><a href="../reference/index-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>index.html</span></a></li>
+<li><a href="../reference/about-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>about.html</span></a></li>
+<li><a href="../reference/services-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>services.html</span></a></li>
+<li><a href="../reference/blog-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>blog.html</span></a></li>
+<li><a href="../reference/gallery-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>gallery.html</span></a></li>
+<li><a href="../reference/contact-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>contact.html</span></a></li>
+<li><a href="../reference/styles-css.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>styles.css</span></a></li>
+</ol>
+            </details>
+            <nav class="toc-desktop" aria-label="Lessons"><p class="toc-part">Start Here</p><ol class="toc-list">
+<li><a href="../index.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Welcome &amp; how to use this guide</span></a></li>
+</ol>
+<p class="toc-part">Part 1 · Getting Started</p><ol class="toc-list">
+<li><a href="../lessons/01-setup.html"><span class="toc-num">1</span><span>Setting up your computer</span></a></li>
+<li><a href="../lessons/02-html-basics.html"><span class="toc-num">2</span><span>HTML basics</span></a></li>
+<li><a href="../lessons/03-css-basics.html"><span class="toc-num">3</span><span>CSS basics</span></a></li>
+<li><a href="../lessons/04-project-setup.html"><span class="toc-num">4</span><span>Creating the project</span></a></li>
+</ol>
+<p class="toc-part">Part 2 · Shared Styles &amp; Layout</p><ol class="toc-list">
+<li><a href="../lessons/05-design-system.html"><span class="toc-num">5</span><span>The design system</span></a></li>
+<li><a href="../lessons/06-buttons-headers.html"><span class="toc-num">6</span><span>Buttons &amp; headings</span></a></li>
+<li><a href="../lessons/07-navbar.html"><span class="toc-num">7</span><span>The navigation bar</span></a></li>
+<li><a href="../lessons/08-footer.html"><span class="toc-num">8</span><span>The footer</span></a></li>
+<li><a href="../lessons/09-responsive.html"><span class="toc-num">9</span><span>Responsive design &amp; animation</span></a></li>
+</ol>
+<p class="toc-part">Part 3 · Building the Pages</p><ol class="toc-list">
+<li><a href="../lessons/10-home-hero.html"><span class="toc-num">10</span><span>Home: hero</span></a></li>
+<li><a href="../lessons/11-home-services-about.html"><span class="toc-num">11</span><span>Home: services &amp; about</span></a></li>
+<li><a href="../lessons/12-home-news-newsletter.html"><span class="toc-num">12</span><span>Home: news &amp; newsletter</span></a></li>
+<li><a href="../lessons/13-home-testimonials-clients.html"><span class="toc-num">13</span><span>Home: testimonials &amp; clients</span></a></li>
+<li><a href="../lessons/14-about.html"><span class="toc-num">14</span><span>About page</span></a></li>
+<li><a href="../lessons/15-services.html"><span class="toc-num">15</span><span>Services page</span></a></li>
+<li><a href="../lessons/16-blog.html"><span class="toc-num">16</span><span>Blog page</span></a></li>
+<li><a href="../lessons/17-gallery.html"><span class="toc-num">17</span><span>Gallery page</span></a></li>
+<li><a href="../lessons/18-contact.html" aria-current="page" class="current"><span class="toc-num">18</span><span>Contact page</span></a></li>
+</ol>
+<p class="toc-part">Part 4 · Polish &amp; Practice</p><ol class="toc-list">
+<li><a href="../lessons/19-images-organization.html"><span class="toc-num">19</span><span>Images &amp; organisation</span></a></li>
+<li><a href="../lessons/20-troubleshooting.html"><span class="toc-num">20</span><span>Troubleshooting guide</span></a></li>
+<li><a href="../lessons/21-final-checklist.html"><span class="toc-num">21</span><span>Exercises &amp; final checklist</span></a></li>
+<li><a href="../lessons/glossary.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Glossary of terms</span></a></li>
+</ol>
+<p class="toc-part">Reference code</p><ol class="toc-list toc-ref">
+<li><a href="../reference/index-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>index.html</span></a></li>
+<li><a href="../reference/about-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>about.html</span></a></li>
+<li><a href="../reference/services-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>services.html</span></a></li>
+<li><a href="../reference/blog-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>blog.html</span></a></li>
+<li><a href="../reference/gallery-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>gallery.html</span></a></li>
+<li><a href="../reference/contact-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>contact.html</span></a></li>
+<li><a href="../reference/styles-css.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>styles.css</span></a></li>
+</ol></nav>
+        </aside>
+        <main class="content">
+<div class="progress"><span>Lesson 18 of 21</span><div class="progress-bar"><div style="width:86%"></div></div><span>86%</span></div>
+
+<header class="lesson-head">
+    <p class="eyebrow">Lesson 18 · Building the Pages</p>
+    <h1>The Contact Page: Forms, Map &amp; FAQ</h1>
+    <p class="lead">The last page! It has contact info cards, a full contact form, a map banner, and a FAQ where each question opens to reveal its answer. That last part uses a built-in HTML feature that needs no JavaScript at all.</p>
+    <ul class="lesson-facts"><li><i class="far fa-clock"></i>About 60 minutes</li><li><i class="far fa-pen-to-square"></i>Edits: <code>contact.html</code></li></ul>
+</header>
+
+<figure class="shot"><a href="../assets/img/contact-section.jpg" target="_blank"><img src="../assets/img/contact-section.jpg" alt="What you will build: info cards and the contact form" loading="lazy"></a><figcaption>What you will build: info cards and the contact form</figcaption></figure>
+
+<div class="goals">
+    <h3>By the end of this lesson you will be able to</h3>
+    <ul>
+        <li>Build an accessible form with <code>&lt;label&gt;</code>, <code>&lt;input&gt;</code>, <code>&lt;select&gt;</code> and <code>&lt;textarea&gt;</code>.</li>
+        <li>Use input types and <code>required</code> for free browser validation.</li>
+        <li>Style form fields, including a focus glow with <code>:focus</code>.</li>
+        <li>Make phone and email links with <code>tel:</code> and <code>mailto:</code>.</li>
+        <li>Build an accordion with <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code>.</li>
+    </ul>
+</div>
+
+<div class="steps">
+<section class="step">
+<h3>Add the page header</h3>
+<p>Open <code>contact.html</code>. Replace <code>&lt;!-- PAGE CONTENT GOES HERE --&gt;</code> with:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> contact.html</span><span class="code-where">Between <code>&lt;/nav&gt;</code> and <code>&lt;!-- Footer --&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">header</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;page-header&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fade-in&quot;</span><span class="p">&gt;</span>Get In Touch<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fade-in stagger-1&quot;</span><span class="p">&gt;</span>Have a broken device or a question? We&#39;re here to help. Reach out and we&#39;ll get back to you within 24 hours.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;breadcrumbs fade-in stagger-2&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;index.html&quot;</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-chevron-right&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Contact
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span></code></pre></figure>
+</section>
+
+<section class="step">
+<h3>Add the section and the info cards</h3>
+<p>Directly above <code>&lt;!-- Footer --&gt;</code>, add:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> contact.html</span><span class="code-where">Directly above <code>&lt;!-- Footer --&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;contact-section&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;contact-grid&quot;</span><span class="p">&gt;</span>
+            <span class="cm">&lt;!-- info cards go here --&gt;</span>
+            <span class="cm">&lt;!-- form goes here --&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span></code></pre></figure>
+<p>Replace <code>&lt;!-- info cards go here --&gt;</code> with:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> contact.html</span><span class="code-where">Replace <code>&lt;!-- info cards go here --&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;contact-info&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;info-card fade-in stagger-1&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;icon&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-map-marker-alt&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Visit Us<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>123 Tech Street<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>Innovation City, IC 10001<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;info-card fade-in stagger-2&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;icon&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-phone-alt&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Call Us<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;tel:+15551234567&quot;</span><span class="p">&gt;</span>+1 (555) 123-4567<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;</span>Mon–Sat: 9AM – 7PM<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;info-card fade-in stagger-3&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;icon&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-envelope&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Email Us<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;mailto:hello@techfixpro.com&quot;</span><span class="p">&gt;</span>hello@techfixpro.com<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;</span><span class="nt">br</span><span class="p">&gt;&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;mailto:support@techfixpro.com&quot;</span><span class="p">&gt;</span>support@techfixpro.com<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;info-card fade-in stagger-4&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;icon&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-clock&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Working Hours<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Monday – Saturday<span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span>9:00 AM – 7:00 PM<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></figure>
+<ul>
+    <li><code>href="tel:+15551234567"</code> makes a <strong>phone link</strong>: tapping it on a phone starts a call.</li>
+    <li><code>href="mailto:hello@techfixpro.com"</code> makes an <strong>email link</strong> that opens the visitor's email app.</li>
+    <li><code>&lt;br&gt;</code> forces a line break inside the paragraph.</li>
+</ul>
+<p>CSS (delete the placeholder comment in <code>&lt;style&gt;</code> first):</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> contact.html</span><span class="code-where">In the <code>&lt;style&gt;</code> block</span></figcaption><pre><code>.contact-section { padding: 80px 0; background: var(--light); }
+.contact-grid { display: grid; grid-template-columns: 1fr 1.2fr; gap: 3rem; align-items: start; }
+
+.contact-info { display: grid; grid-template-columns: 1fr 1fr; gap: 1.25rem; }
+.info-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 1.75rem;
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+.info-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); border-color: transparent; }
+.info-card .icon {
+    width: 50px; height: 50px;
+    background: linear-gradient(135deg, #eff6ff, #dbeafe);
+    border-radius: var(--radius);
+    display: flex; align-items: center; justify-content: center;
+    margin-bottom: 1rem; font-size: 1.2rem; color: var(--primary);
+}
+.info-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.4rem; }
+.info-card p { color: var(--gray); font-size: 0.9rem; line-height: 1.6; }
+.info-card a { color: var(--primary); font-weight: 500; }
+.info-card a:hover { text-decoration: underline; }</code></pre></figure>
+<p><code>grid-template-columns: 1fr 1.2fr</code> makes the form column a little wider than the info column. <code>align-items: start</code> keeps both columns aligned to the top instead of stretching them. The info cards form their own 2×2 grid.</p>
+</section>
+
+<section class="step">
+<h3>Add the contact form</h3>
+<p>Replace <code>&lt;!-- form goes here --&gt;</code> with:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> contact.html</span><span class="code-where">Replace <code>&lt;!-- form goes here --&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;contact-form-wrapper fade-in&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Send Us a Message<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Fill out the form below and we&#39;ll get back to you as soon as possible.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">form</span> <span class="na">action</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-row&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-group&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;name&quot;</span><span class="p">&gt;</span>Full Name<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;name&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;name&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;John Doe&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-group&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;email&quot;</span><span class="p">&gt;</span>Email Address<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;email&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;john@example.com&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-row&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-group&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;phone&quot;</span><span class="p">&gt;</span>Phone Number<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;tel&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;phone&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;phone&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;+1 (555) 000-0000&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-group&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;service&quot;</span><span class="p">&gt;</span>Service Needed<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">select</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;service&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;service&quot;</span> <span class="na">required</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;&quot;</span> <span class="na">disabled</span> <span class="na">selected</span><span class="p">&gt;</span>Select a service<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;phone&quot;</span><span class="p">&gt;</span>Phone Repair<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;laptop&quot;</span><span class="p">&gt;</span>Laptop Repair<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;tablet&quot;</span><span class="p">&gt;</span>Tablet / iPad Repair<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">option</span> <span class="na">value</span><span class="o">=</span><span class="s">&quot;other&quot;</span><span class="p">&gt;</span>Other / Not Sure<span class="p">&lt;/</span><span class="nt">option</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">select</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;form-group&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;message&quot;</span><span class="p">&gt;</span>Your Message<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">textarea</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;message&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;message&quot;</span> <span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Tell us about your device and the issue you&#39;re experiencing...&quot;</span> <span class="na">required</span><span class="p">&gt;&lt;/</span><span class="nt">textarea</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">button</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;submit&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-primary btn-lg&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;width:100%&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-paper-plane&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+            Send Message
+        <span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">form</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></figure>
+<h4>Form elements explained</h4>
+<div class="table-wrap"><table>
+<thead><tr><th>Element</th><th>What it does</th></tr></thead>
+<tbody>
+<tr><td><code>&lt;label for="name"&gt;</code></td><td>The visible name of a field. Its <code>for</code> matches the field's <code>id</code>, so clicking the label puts the cursor in the field, and screen readers announce it.</td></tr>
+<tr><td><code>type="text"</code> / <code>"email"</code> / <code>"tel"</code></td><td>Plain text, an email address (checked automatically), and a phone number (phones show a number keypad).</td></tr>
+<tr><td><code>name="…"</code></td><td>The name each answer is sent under when the form is submitted.</td></tr>
+<tr><td><code>&lt;select&gt;</code> + <code>&lt;option&gt;</code></td><td>A dropdown list. The first option is <code>disabled selected</code> with an empty value: it shows “Select a service” but can't be chosen, so <code>required</code> forces a real choice.</td></tr>
+<tr><td><code>&lt;textarea&gt;</code></td><td>A multi-line text box for longer messages. It needs a closing tag.</td></tr>
+<tr><td><code>required</code></td><td>The browser refuses to submit until this field is filled in.</td></tr>
+</tbody></table></div>
+<div class="callout term"><p class="callout-title"><i class="fas fa-circle-info"></i> Does the form actually send email?</p><p>No. Sending a message needs a <strong>server</strong>, which is beyond HTML and CSS. With <code>action="#"</code>, a valid form just reloads the page. (The original site shows a JavaScript pop-up instead.) Later, you can connect it to a free form service, which usually means changing only the <code>action</code> attribute and adding <code>method="post"</code>.</p></div>
+</section>
+
+<section class="step">
+<h3>Style the form</h3>
+<p>Add to the <code>&lt;style&gt;</code> block:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> contact.html</span><span class="code-where">In the <code>&lt;style&gt;</code> block, below the info CSS</span></figcaption><pre><code>.contact-form-wrapper {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow);
+}
+.contact-form-wrapper h2 { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; }
+.contact-form-wrapper &gt; p { color: var(--gray); margin-bottom: 1.75rem; font-size: 0.95rem; }
+.form-group { margin-bottom: 1.25rem; }
+.form-group label { display: block; font-size: 0.9rem; font-weight: 600; margin-bottom: 0.4rem; color: var(--dark-gray); }
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 0.875rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    font-size: 0.95rem;
+    font-family: inherit;
+    transition: var(--transition);
+    outline: none;
+    background: var(--white);
+}
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+.form-group textarea { resize: vertical; min-height: 120px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }</code></pre></figure>
+<ul>
+    <li>One rule styles all three field types at once using a <strong>grouped selector</strong> (commas).</li>
+    <li><code>font-family: inherit</code>: form fields don't use the page font by default, so this makes them use Inter.</li>
+    <li><code>:focus</code> applies while you're typing in a field. The blue border plus a soft 3px <code>box-shadow</code> “ring” shows clearly which field is active.</li>
+    <li><code>resize: vertical</code> lets visitors drag the message box taller, but not wider.</li>
+    <li><code>.form-row</code> is a two-column grid that puts Name/Email and Phone/Service side by side.</li>
+</ul>
+<figure class="shot"><a href="../assets/img/contact-form-focus.jpg" target="_blank"><img src="../assets/img/contact-form-focus.jpg" alt="Clicking into “Full Name” shows the blue focus ring" loading="lazy"></a><figcaption>Clicking into “Full Name” shows the blue focus ring</figcaption></figure>
+<p>Try submitting the empty form. The browser points out the first required field.</p>
+</section>
+
+<section class="step">
+<h3>Add the map banner</h3>
+<p>Directly above <code>&lt;!-- Footer --&gt;</code>:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> contact.html</span><span class="code-where">Directly above <code>&lt;!-- Footer --&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;map-section&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;map-container fade-in&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1200&amp;h=500&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Map location&quot;</span> <span class="na">loading</span><span class="o">=</span><span class="s">&quot;lazy&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;map-overlay&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Find Us on the Map<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>123 Tech Street, Innovation City — Right next to the Central Tech Plaza<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://maps.google.com&quot;</span> <span class="na">target</span><span class="o">=</span><span class="s">&quot;_blank&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-white&quot;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-location-arrow&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+                    Get Directions
+                <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span></code></pre></figure>
+<p>CSS:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> contact.html</span><span class="code-where">In the <code>&lt;style&gt;</code> block, below the form CSS</span></figcaption><pre><code>.map-section { padding: 0 0 80px; background: var(--light); }
+.map-container {
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    height: 400px;
+    background: var(--dark-gray);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--white);
+    position: relative;
+}
+.map-container img {
+    width: 100%; height: 100%; object-fit: cover;
+    opacity: 0.7;
+}
+.map-overlay {
+    position: absolute; inset: 0;
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    text-align: center;
+    padding: 2rem;
+}
+.map-overlay h3 { font-size: 1.5rem; font-weight: 800; margin-bottom: 0.5rem; }
+.map-overlay p { color: var(--gray-light); margin-bottom: 1.25rem; }</code></pre></figure>
+<p>A map photo at 70% opacity on a dark background, with text layered on top (<code>.map-overlay</code> with <code>position: absolute; inset: 0</code>). This is the same layering trick as the hero. <code>target="_blank"</code> on the button opens Google Maps in a new tab.</p>
+<figure class="shot"><a href="../assets/img/contact-map.jpg" target="_blank"><img src="../assets/img/contact-map.jpg" alt="The map banner" loading="lazy"></a><figcaption>The map banner</figcaption></figure>
+</section>
+
+<section class="step">
+<h3>Add the FAQ with <code>&lt;details&gt;</code></h3>
+<p>HTML has a built-in “click to open” element:</p>
+<ul>
+    <li><code>&lt;details&gt;</code> is a box that is closed by default.</li>
+    <li><code>&lt;summary&gt;</code> is the part that is always visible. Clicking it opens and closes the box.</li>
+    <li>When open, the browser adds an <code>open</code> attribute to <code>&lt;details&gt;</code>, which CSS can detect with <code>[open]</code>.</li>
+    <li>Giving several <code>&lt;details&gt;</code> the same <code>name="faq"</code> makes them an exclusive group: opening one closes the others, just like the original site. Older browsers simply let several stay open, which is fine.</li>
+</ul>
+<p>Directly above <code>&lt;!-- Footer --&gt;</code>, add:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> contact.html</span><span class="code-where">Directly above <code>&lt;!-- Footer --&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;faq&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;section-header fade-in&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;overline&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-question-circle&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> FAQs<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Frequently Asked Questions<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Quick answers to common questions. Can&#39;t find what you&#39;re looking for? Reach out directly.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;faq-grid&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">details</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;faq-item fade-in stagger-1&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;faq&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">summary</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;faq-question&quot;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>How long does a typical repair take?<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-chevron-down&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">summary</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;faq-answer&quot;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Most common repairs like screen replacements and battery swaps are completed within 30–60 minutes. More complex issues such as motherboard repairs or water damage recovery may take 1–3 business days. We&#39;ll give you an accurate timeline during your free diagnostic.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">details</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">details</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;faq-item fade-in stagger-2&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;faq&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">summary</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;faq-question&quot;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Do you offer a warranty on repairs?<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-chevron-down&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">summary</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;faq-answer&quot;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Yes! All our repairs come with a 90-day warranty covering both parts and labor. If the same issue reoccurs within that period, we&#39;ll fix it at no additional cost. Business support plans include an extended 1-year warranty.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">details</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">details</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;faq-item fade-in stagger-1&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;faq&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">summary</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;faq-question&quot;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>What brands do you repair?<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-chevron-down&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">summary</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;faq-answer&quot;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>We repair all major brands including Apple (iPhone, iPad, MacBook), Samsung, Google Pixel, OnePlus, Huawei, Dell, HP, Lenovo, ASUS, and Microsoft Surface. If you don&#39;t see your brand listed, contact us — we likely still service it.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">details</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">details</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;faq-item fade-in stagger-2&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;faq&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">summary</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;faq-question&quot;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Is the diagnostic really free?<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-chevron-down&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">summary</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;faq-answer&quot;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Absolutely. We offer a completely free diagnostic assessment for all devices. You&#39;ll know exactly what&#39;s wrong and what it will cost to fix before any work begins. No obligation, no pressure.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">details</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">details</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;faq-item fade-in stagger-3&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;faq&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">summary</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;faq-question&quot;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Do I need to book an appointment?<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-chevron-down&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">summary</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;faq-answer&quot;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Walk-ins are always welcome! However, booking an appointment guarantees priority service and reduces your wait time. You can book online through our contact form or give us a call.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">details</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">details</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;faq-item fade-in stagger-4&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;faq&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">summary</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;faq-question&quot;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Will my data be safe during repair?<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-chevron-down&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">summary</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;faq-answer&quot;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Data security is our top priority. Our technicians follow strict privacy protocols, and we never access your personal files without explicit permission. For extra peace of mind, we recommend backing up your data before bringing your device in.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">details</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span></code></pre></figure>
+<p>CSS:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> contact.html</span><span class="code-where">In the <code>&lt;style&gt;</code> block, below the map CSS</span></figcaption><pre><code>.faq { padding: 80px 0; background: var(--white); }
+.faq-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; align-items: start; }
+.faq-item {
+    background: var(--light);
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid var(--border);
+}
+.faq-question {
+    padding: 1.25rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transition);
+    list-style: none;
+}
+.faq-question::-webkit-details-marker { display: none; }
+.faq-question:hover { color: var(--primary); }
+.faq-question i { transition: transform 0.3s ease; color: var(--gray); }
+.faq-item[open] .faq-question i { transform: rotate(180deg); color: var(--primary); }
+.faq-answer { padding: 0 1.5rem 1.25rem; }
+.faq-answer p { color: var(--gray); font-size: 0.92rem; line-height: 1.7; }</code></pre></figure>
+<ul>
+    <li><code>list-style: none</code> and <code>::-webkit-details-marker { display: none; }</code> remove the browser's default ▶ triangle, because we use our own chevron icon.</li>
+    <li><code>.faq-item[open] .faq-question i</code> rotates the chevron 180° when that item is open.</li>
+    <li><code>align-items: start</code> on the grid stops an opened question from stretching its neighbour.</li>
+</ul>
+<figure class="shot"><a href="../assets/img/contact-faq-open.jpg" target="_blank"><img src="../assets/img/contact-faq-open.jpg" alt="The first question opened. Opening another closes it." loading="lazy"></a><figcaption>The first question opened. Opening another closes it.</figcaption></figure>
+</section>
+
+<section class="step">
+<h3>Make it responsive</h3>
+<p>Add at the very end of the <code>&lt;style&gt;</code> block:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> contact.html</span><span class="code-where">At the very end of the <code>&lt;style&gt;</code> block</span></figcaption><pre><code>@media (max-width: 1024px) {
+    .contact-grid { grid-template-columns: 1fr; }
+    .contact-info { order: -1; }
+    .faq-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 768px) {
+    .contact-info { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
+    .contact-form-wrapper { padding: 1.75rem; }
+    .map-container { height: 280px; }
+}</code></pre></figure>
+<div class="shot-row">
+<figure class="shot tall"><a href="../assets/img/contact-full.jpg" target="_blank"><img src="../assets/img/contact-full.jpg" alt="The finished Contact page, desktop" loading="lazy"></a><figcaption>The finished Contact page, desktop</figcaption></figure>
+<figure class="shot tall"><a href="../assets/img/contact-mobile-full.jpg" target="_blank"><img src="../assets/img/contact-mobile-full.jpg" alt="The Contact page on a phone" loading="lazy"></a><figcaption>The Contact page on a phone</figcaption></figure>
+</div>
+</section>
+</div>
+
+<div class="checkpoint">
+    <h3><i class="fas fa-flag-checkered"></i> Checkpoint: all six pages are built! 🎉</h3>
+    <ul>
+        <li><label><input type="checkbox"><span>Four info cards and the form sit side by side on desktop, and stack on smaller screens.</span></label></li>
+        <li><label><input type="checkbox"><span>Clicking a label puts the cursor in its field, and the field glows blue.</span></label></li>
+        <li><label><input type="checkbox"><span>Submitting the empty form shows a browser warning.</span></label></li>
+        <li><label><input type="checkbox"><span>FAQ questions open and close, and their arrows flip.</span></label></li>
+    </ul>
+    <p>Compare with the <a href="../reference/contact-html.html">complete <code>contact.html</code></a>.</p>
+</div>
+
+<div class="callout mistake"><p class="callout-title"><i class="fas fa-bug"></i> Common mistakes</p>
+<ul>
+<li><strong>Clicking a label does nothing:</strong> the label's <code>for</code> must exactly match the field's <code>id</code>.</li>
+<li><strong>The whole page after the form is inside the textarea:</strong> you forgot <code>&lt;/textarea&gt;</code>.</li>
+<li><strong>Two arrows show in the FAQ:</strong> the default marker wasn't removed. Check <code>list-style: none</code> on <code>.faq-question</code>.</li>
+</ul></div>
+
+<nav class="pager"><a class="pager-card prev" href="../lessons/17-gallery.html"><small>← Previous</small><strong>Lesson 17 · The Gallery Page: Filters &amp; Lightbox Without JavaScript</strong></a><a class="pager-card next" href="../lessons/19-images-organization.html"><small>Next →</small><strong>Lesson 19 · Managing Images &amp; Organising Your Project</strong></a></nav>
+        </main>
+    </div>
+    <footer class="site-foot">TechFix Pro HTML &amp; CSS Guide · Built with HTML &amp; CSS only · Photos from Unsplash</footer>
+</body>
+</html>

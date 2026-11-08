@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The About Page · TechFix Pro HTML &amp; CSS Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/guide.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="../index.html"><i class="fas fa-microchip"></i> TechFix Pro <span>HTML &amp; CSS Guide</span></a>
+        <a class="topbar-link" href="../solution/index.html" target="_blank"><i class="fas fa-eye"></i> <span>View finished site</span></a>
+    </header>
+    <div class="layout">
+        <aside class="sidebar">
+            <details class="toc-mobile">
+                <summary><i class="fas fa-list"></i> All lessons</summary>
+                <p class="toc-part">Start Here</p><ol class="toc-list">
+<li><a href="../index.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Welcome &amp; how to use this guide</span></a></li>
+</ol>
+<p class="toc-part">Part 1 · Getting Started</p><ol class="toc-list">
+<li><a href="../lessons/01-setup.html"><span class="toc-num">1</span><span>Setting up your computer</span></a></li>
+<li><a href="../lessons/02-html-basics.html"><span class="toc-num">2</span><span>HTML basics</span></a></li>
+<li><a href="../lessons/03-css-basics.html"><span class="toc-num">3</span><span>CSS basics</span></a></li>
+<li><a href="../lessons/04-project-setup.html"><span class="toc-num">4</span><span>Creating the project</span></a></li>
+</ol>
+<p class="toc-part">Part 2 · Shared Styles &amp; Layout</p><ol class="toc-list">
+<li><a href="../lessons/05-design-system.html"><span class="toc-num">5</span><span>The design system</span></a></li>
+<li><a href="../lessons/06-buttons-headers.html"><span class="toc-num">6</span><span>Buttons &amp; headings</span></a></li>
+<li><a href="../lessons/07-navbar.html"><span class="toc-num">7</span><span>The navigation bar</span></a></li>
+<li><a href="../lessons/08-footer.html"><span class="toc-num">8</span><span>The footer</span></a></li>
+<li><a href="../lessons/09-responsive.html"><span class="toc-num">9</span><span>Responsive design &amp; animation</span></a></li>
+</ol>
+<p class="toc-part">Part 3 · Building the Pages</p><ol class="toc-list">
+<li><a href="../lessons/10-home-hero.html"><span class="toc-num">10</span><span>Home: hero</span></a></li>
+<li><a href="../lessons/11-home-services-about.html"><span class="toc-num">11</span><span>Home: services &amp; about</span></a></li>
+<li><a href="../lessons/12-home-news-newsletter.html"><span class="toc-num">12</span><span>Home: news &amp; newsletter</span></a></li>
+<li><a href="../lessons/13-home-testimonials-clients.html"><span class="toc-num">13</span><span>Home: testimonials &amp; clients</span></a></li>
+<li><a href="../lessons/14-about.html" aria-current="page" class="current"><span class="toc-num">14</span><span>About page</span></a></li>
+<li><a href="../lessons/15-services.html"><span class="toc-num">15</span><span>Services page</span></a></li>
+<li><a href="../lessons/16-blog.html"><span class="toc-num">16</span><span>Blog page</span></a></li>
+<li><a href="../lessons/17-gallery.html"><span class="toc-num">17</span><span>Gallery page</span></a></li>
+<li><a href="../lessons/18-contact.html"><span class="toc-num">18</span><span>Contact page</span></a></li>
+</ol>
+<p class="toc-part">Part 4 · Polish &amp; Practice</p><ol class="toc-list">
+<li><a href="../lessons/19-images-organization.html"><span class="toc-num">19</span><span>Images &amp; organisation</span></a></li>
+<li><a href="../lessons/20-troubleshooting.html"><span class="toc-num">20</span><span>Troubleshooting guide</span></a></li>
+<li><a href="../lessons/21-final-checklist.html"><span class="toc-num">21</span><span>Exercises &amp; final checklist</span></a></li>
+<li><a href="../lessons/glossary.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Glossary of terms</span></a></li>
+</ol>
+<p class="toc-part">Reference code</p><ol class="toc-list toc-ref">
+<li><a href="../reference/index-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>index.html</span></a></li>
+<li><a href="../reference/about-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>about.html</span></a></li>
+<li><a href="../reference/services-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>services.html</span></a></li>
+<li><a href="../reference/blog-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>blog.html</span></a></li>
+<li><a href="../reference/gallery-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>gallery.html</span></a></li>
+<li><a href="../reference/contact-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>contact.html</span></a></li>
+<li><a href="../reference/styles-css.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>styles.css</span></a></li>
+</ol>
+            </details>
+            <nav class="toc-desktop" aria-label="Lessons"><p class="toc-part">Start Here</p><ol class="toc-list">
+<li><a href="../index.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Welcome &amp; how to use this guide</span></a></li>
+</ol>
+<p class="toc-part">Part 1 · Getting Started</p><ol class="toc-list">
+<li><a href="../lessons/01-setup.html"><span class="toc-num">1</span><span>Setting up your computer</span></a></li>
+<li><a href="../lessons/02-html-basics.html"><span class="toc-num">2</span><span>HTML basics</span></a></li>
+<li><a href="../lessons/03-css-basics.html"><span class="toc-num">3</span><span>CSS basics</span></a></li>
+<li><a href="../lessons/04-project-setup.html"><span class="toc-num">4</span><span>Creating the project</span></a></li>
+</ol>
+<p class="toc-part">Part 2 · Shared Styles &amp; Layout</p><ol class="toc-list">
+<li><a href="../lessons/05-design-system.html"><span class="toc-num">5</span><span>The design system</span></a></li>
+<li><a href="../lessons/06-buttons-headers.html"><span class="toc-num">6</span><span>Buttons &amp; headings</span></a></li>
+<li><a href="../lessons/07-navbar.html"><span class="toc-num">7</span><span>The navigation bar</span></a></li>
+<li><a href="../lessons/08-footer.html"><span class="toc-num">8</span><span>The footer</span></a></li>
+<li><a href="../lessons/09-responsive.html"><span class="toc-num">9</span><span>Responsive design &amp; animation</span></a></li>
+</ol>
+<p class="toc-part">Part 3 · Building the Pages</p><ol class="toc-list">
+<li><a href="../lessons/10-home-hero.html"><span class="toc-num">10</span><span>Home: hero</span></a></li>
+<li><a href="../lessons/11-home-services-about.html"><span class="toc-num">11</span><span>Home: services &amp; about</span></a></li>
+<li><a href="../lessons/12-home-news-newsletter.html"><span class="toc-num">12</span><span>Home: news &amp; newsletter</span></a></li>
+<li><a href="../lessons/13-home-testimonials-clients.html"><span class="toc-num">13</span><span>Home: testimonials &amp; clients</span></a></li>
+<li><a href="../lessons/14-about.html" aria-current="page" class="current"><span class="toc-num">14</span><span>About page</span></a></li>
+<li><a href="../lessons/15-services.html"><span class="toc-num">15</span><span>Services page</span></a></li>
+<li><a href="../lessons/16-blog.html"><span class="toc-num">16</span><span>Blog page</span></a></li>
+<li><a href="../lessons/17-gallery.html"><span class="toc-num">17</span><span>Gallery page</span></a></li>
+<li><a href="../lessons/18-contact.html"><span class="toc-num">18</span><span>Contact page</span></a></li>
+</ol>
+<p class="toc-part">Part 4 · Polish &amp; Practice</p><ol class="toc-list">
+<li><a href="../lessons/19-images-organization.html"><span class="toc-num">19</span><span>Images &amp; organisation</span></a></li>
+<li><a href="../lessons/20-troubleshooting.html"><span class="toc-num">20</span><span>Troubleshooting guide</span></a></li>
+<li><a href="../lessons/21-final-checklist.html"><span class="toc-num">21</span><span>Exercises &amp; final checklist</span></a></li>
+<li><a href="../lessons/glossary.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Glossary of terms</span></a></li>
+</ol>
+<p class="toc-part">Reference code</p><ol class="toc-list toc-ref">
+<li><a href="../reference/index-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>index.html</span></a></li>
+<li><a href="../reference/about-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>about.html</span></a></li>
+<li><a href="../reference/services-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>services.html</span></a></li>
+<li><a href="../reference/blog-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>blog.html</span></a></li>
+<li><a href="../reference/gallery-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>gallery.html</span></a></li>
+<li><a href="../reference/contact-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>contact.html</span></a></li>
+<li><a href="../reference/styles-css.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>styles.css</span></a></li>
+</ol></nav>
+        </aside>
+        <main class="content">
+<div class="progress"><span>Lesson 14 of 21</span><div class="progress-bar"><div style="width:67%"></div></div><span>67%</span></div>
+
+<header class="lesson-head">
+    <p class="eyebrow">Lesson 14 · Building the Pages</p>
+    <h1>The About Page</h1>
+    <p class="lead">The About page tells TechFix Pro's story. You will reuse lots of what you've already learned (grids, cards, section headers) and use the shared page header for the first time.</p>
+    <ul class="lesson-facts"><li><i class="far fa-clock"></i>About 50 minutes</li><li><i class="far fa-pen-to-square"></i>Edits: <code>about.html</code></li></ul>
+</header>
+
+<figure class="shot tall"><a href="../assets/img/about-full.jpg" target="_blank"><img src="../assets/img/about-full.jpg" alt="The finished About page (scroll inside the picture)" loading="lazy"></a><figcaption>The finished About page (scroll inside the picture)</figcaption></figure>
+
+<div class="goals">
+    <h3>By the end of this lesson you will be able to</h3>
+    <ul>
+        <li>Reuse shared components (page header, section header, container) on a new page.</li>
+        <li>Build 4-column grids that shrink to 2 and then 1 column.</li>
+        <li>Write compact one-line CSS rules.</li>
+    </ul>
+</div>
+
+<div class="callout tip"><p class="callout-title"><i class="fas fa-route"></i> The routine for every page</p><p>From now on each page follows the same routine. Open the page file. Delete <code>&lt;!-- PAGE CONTENT GOES HERE --&gt;</code> and the <code>/* Page-specific styles go here */</code> comment. Then add each section's HTML directly above <code>&lt;!-- Footer --&gt;</code>, and each piece of CSS just above <code>&lt;/style&gt;</code>.</p></div>
+
+<div class="steps">
+<section class="step">
+<h3>Add the page header</h3>
+<p>Open <code>about.html</code>. Delete the line <code>&lt;!-- PAGE CONTENT GOES HERE --&gt;</code> and, in its place (between the navbar and the footer), add:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> about.html</span><span class="code-where">Between <code>&lt;/nav&gt;</code> and <code>&lt;!-- Footer --&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">header</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;page-header&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fade-in&quot;</span><span class="p">&gt;</span>About TechFix Pro<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fade-in stagger-1&quot;</span><span class="p">&gt;</span>A decade of excellence in electronic repair, driven by passion and precision.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;breadcrumbs fade-in stagger-2&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;index.html&quot;</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-chevron-right&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> About
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span></code></pre></figure>
+<p>No new CSS needed: you wrote <code>.page-header</code> and <code>.breadcrumbs</code> in <code>styles.css</code> back in Lesson 6. Save and look:</p>
+<figure class="shot"><a href="../assets/img/about-header.jpg" target="_blank"><img src="../assets/img/about-header.jpg" alt="The shared dark page header, used here for the first time" loading="lazy"></a><figcaption>The shared dark page header, used here for the first time</figcaption></figure>
+<p>The breadcrumb's <code>fa-chevron-right</code> icon draws the small arrow between “Home” and “About”.</p>
+</section>
+
+<section class="step">
+<h3>Add “Our Story”</h3>
+<p>HTML, directly above <code>&lt;!-- Footer --&gt;</code>:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> about.html</span><span class="code-where">Directly above <code>&lt;!-- Footer --&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;story&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;story-grid&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;story-content fade-in&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;overline&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-book-open&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Our Story<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>From a Small Workshop to Industry Leaders<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>TechFix Pro began in 2015 as a one-person repair shop in a garage. Founder Alex Chen believed that quality electronic repairs shouldn&#39;t cost a fortune. With a single toolkit and unwavering dedication, he started fixing devices for friends and neighbors.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Today, we&#39;ve grown into a team of 25+ certified technicians across four locations, handling over 15,000 repairs annually. Despite our growth, our mission remains the same: deliver honest, high-quality repairs with transparent pricing and genuine parts.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>We invest heavily in ongoing training for our technicians, ensuring they stay ahead of the curve with the latest devices and repair techniques. Every repair is backed by our 90-day warranty because we stand behind our work.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;story-image fade-in stagger-2&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=700&amp;h=500&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Our workshop&quot;</span> <span class="na">loading</span><span class="o">=</span><span class="s">&quot;lazy&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span></code></pre></figure>
+<p>CSS, in the <code>&lt;style&gt;</code> block (delete the placeholder comment first):</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> about.html</span><span class="code-where">In the <code>&lt;style&gt;</code> block</span></figcaption><pre><code>.story { padding: 100px 0; background: var(--white); }
+.story-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.story-content h2 { font-size: 2rem; font-weight: 800; margin-bottom: 1rem; }
+.story-content p { color: var(--gray); line-height: 1.8; margin-bottom: 1.25rem; }
+.story-image img { width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); object-fit: cover; height: 380px; }</code></pre></figure>
+<p>This is the same two-column idea as the Home page's about section. Each rule is written on <strong>one line</strong>, which is common for short rules. It works exactly the same as spreading it over several lines.</p>
+<figure class="shot"><a href="../assets/img/about-story.jpg" target="_blank"><img src="../assets/img/about-story.jpg" alt="Our Story: text on the left, photo on the right" loading="lazy"></a><figcaption>Our Story: text on the left, photo on the right</figcaption></figure>
+</section>
+
+<section class="step">
+<h3>Add the stats bar</h3>
+<p>HTML, directly above <code>&lt;!-- Footer --&gt;</code>:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> about.html</span><span class="code-where">Directly above <code>&lt;!-- Footer --&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;stats-bar&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;stats-grid&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;stat-item fade-in&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;number&quot;</span><span class="p">&gt;</span>15K+<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;label&quot;</span><span class="p">&gt;</span>Devices Repaired<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;stat-item fade-in stagger-1&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;number&quot;</span><span class="p">&gt;</span>25+<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;label&quot;</span><span class="p">&gt;</span>Expert Technicians<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;stat-item fade-in stagger-2&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;number&quot;</span><span class="p">&gt;</span>4<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;label&quot;</span><span class="p">&gt;</span>Service Locations<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;stat-item fade-in stagger-3&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;number&quot;</span><span class="p">&gt;</span>99%<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;label&quot;</span><span class="p">&gt;</span>Customer Satisfaction<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span></code></pre></figure>
+<p>CSS, in the <code>&lt;style&gt;</code> block:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> about.html</span><span class="code-where">In the <code>&lt;style&gt;</code> block, below the previous CSS</span></figcaption><pre><code>.stats-bar {
+    padding: 60px 0;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: var(--white);
+}
+.stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; text-align: center; }
+.stat-item .number { font-size: 2.75rem; font-weight: 800; display: block; line-height: 1; }
+.stat-item .label { font-size: 0.9rem; opacity: 0.85; margin-top: 0.5rem; }</code></pre></figure>
+<p>A blue gradient band with four equal columns. <code>color: var(--white)</code> on the section makes all the text inside white; <code>line-height: 1</code> on the numbers removes the extra space above and below them.</p>
+<figure class="shot"><a href="../assets/img/about-stats-bar.jpg" target="_blank"><img src="../assets/img/about-stats-bar.jpg" alt="The stats bar" loading="lazy"></a><figcaption>The stats bar</figcaption></figure>
+</section>
+
+<section class="step">
+<h3>Add “Our Values”</h3>
+<p>HTML, directly above <code>&lt;!-- Footer --&gt;</code>:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> about.html</span><span class="code-where">Directly above <code>&lt;!-- Footer --&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;values&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;section-header fade-in&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;overline&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-heart&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Our Values<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>What Drives Us<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>The principles that guide every repair we make and every customer we serve.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;values-grid&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;value-card fade-in stagger-1&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;value-icon&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-shield-alt&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Integrity<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>We believe in honest diagnostics and transparent pricing. No upsells, no hidden fees — ever.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;value-card fade-in stagger-2&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;value-icon&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-gem&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Quality<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Only genuine or OEM-equivalent parts make it into your device. We never compromise on quality.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;value-card fade-in stagger-3&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;value-icon&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-bolt&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Speed<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>We respect your time. Most common repairs are completed within the same day you bring them in.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;value-card fade-in stagger-4&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;value-icon&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-users&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Community<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>We&#39;re proud to be part of this community. Local businesses and residents trust us with their tech.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span></code></pre></figure>
+<p>CSS:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> about.html</span><span class="code-where">In the <code>&lt;style&gt;</code> block, below the previous CSS</span></figcaption><pre><code>.values { padding: 100px 0; background: var(--light); }
+.values-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+.value-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2rem 1.5rem;
+    text-align: center;
+    border: 1px solid var(--border);
+    transition: var(--transition);
+}
+.value-card:hover { transform: translateY(-6px); box-shadow: var(--shadow-lg); border-color: transparent; }
+.value-icon { width: 60px; height: 60px; background: linear-gradient(135deg, #eff6ff, #dbeafe); border-radius: var(--radius); display: flex; align-items: center; justify-content: center; margin: 0 auto 1.25rem; font-size: 1.4rem; color: var(--primary); }
+.value-card h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; }
+.value-card p { color: var(--gray); font-size: 0.9rem; line-height: 1.65; }</code></pre></figure>
+<p>These cards are a smaller version of the Home page service cards. The icon box uses the same light blue gradient, centred with <code>margin: 0 auto 1.25rem</code> (0 top, auto left/right, 1.25rem bottom).</p>
+<figure class="shot"><a href="../assets/img/about-values.jpg" target="_blank"><img src="../assets/img/about-values.jpg" alt="Four value cards" loading="lazy"></a><figcaption>Four value cards</figcaption></figure>
+</section>
+
+<section class="step">
+<h3>Add “Meet Our Experts”</h3>
+<p>HTML, directly above <code>&lt;!-- Footer --&gt;</code>:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> about.html</span><span class="code-where">Directly above <code>&lt;!-- Footer --&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;team&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;section-header fade-in&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;overline&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-user-friends&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> The Team<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Meet Our Experts<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Certified technicians with years of hands-on experience.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;team-grid&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;team-card fade-in stagger-1&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&amp;h=400&amp;fit=crop&amp;crop=face&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Alex Chen&quot;</span> <span class="na">loading</span><span class="o">=</span><span class="s">&quot;lazy&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Alex Chen<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Founder <span class="err">&amp;</span> Lead Technician<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;team-card fade-in stagger-2&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&amp;h=400&amp;fit=crop&amp;crop=face&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Maria Santos&quot;</span> <span class="na">loading</span><span class="o">=</span><span class="s">&quot;lazy&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Maria Santos<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Senior Phone Specialist<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;team-card fade-in stagger-3&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&amp;h=400&amp;fit=crop&amp;crop=face&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;David Park&quot;</span> <span class="na">loading</span><span class="o">=</span><span class="s">&quot;lazy&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>David Park<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Laptop <span class="err">&amp;</span> PC Expert<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;team-card fade-in stagger-4&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&amp;h=400&amp;fit=crop&amp;crop=face&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Lisa Wong&quot;</span> <span class="na">loading</span><span class="o">=</span><span class="s">&quot;lazy&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Lisa Wong<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Customer Experience Lead<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span></code></pre></figure>
+<p>CSS:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> about.html</span><span class="code-where">In the <code>&lt;style&gt;</code> block, below the previous CSS</span></figcaption><pre><code>.team { padding: 100px 0; background: var(--white); }
+.team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.75rem; }
+.team-card { text-align: center; }
+.team-card img { width: 100%; height: 280px; object-fit: cover; border-radius: var(--radius-lg); margin-bottom: 1rem; box-shadow: var(--shadow); transition: var(--transition); }
+.team-card:hover img { transform: translateY(-4px); box-shadow: var(--shadow-lg); }
+.team-card h3 { font-size: 1.1rem; font-weight: 700; }
+.team-card span { color: var(--gray); font-size: 0.9rem; }</code></pre></figure>
+<p>The photos are cropped to the same height (280px) with <code>object-fit: cover</code>, so all four cards line up even though the original photos differ. <code>.team-card:hover img</code> lifts only the photo, not the whole card.</p>
+<figure class="shot"><a href="../assets/img/about-team.jpg" target="_blank"><img src="../assets/img/about-team.jpg" alt="The team grid" loading="lazy"></a><figcaption>The team grid</figcaption></figure>
+</section>
+
+<section class="step">
+<h3>Make it responsive</h3>
+<p>Add at the very end of the <code>&lt;style&gt;</code> block:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> about.html</span><span class="code-where">At the very end of the <code>&lt;style&gt;</code> block</span></figcaption><pre><code>@media (max-width: 1024px) {
+    .story-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .story-image { order: -1; }
+    .stats-grid { grid-template-columns: repeat(2, 1fr); }
+    .values-grid { grid-template-columns: repeat(2, 1fr); }
+    .team-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 768px) {
+    .values-grid, .team-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+    .stats-grid { grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+    .stat-item .number { font-size: 2rem; }
+}</code></pre></figure>
+<ul>
+    <li>At 1024px: the story stacks (photo first), and the stats, values and team grids drop to 2 columns.</li>
+    <li>At 768px: values and team become 1 column (max 400px, centred). Stats stay at 2 columns with smaller numbers.</li>
+    <li>The page header's heading already shrinks on phones, thanks to the rule you added to <code>styles.css</code> in Lesson 9.</li>
+</ul>
+<figure class="shot tall"><a href="../assets/img/about-mobile-full.jpg" target="_blank"><img src="../assets/img/about-mobile-full.jpg" alt="The About page on a phone" loading="lazy"></a><figcaption>The About page on a phone</figcaption></figure>
+</section>
+</div>
+
+<div class="checkpoint">
+    <h3><i class="fas fa-flag-checkered"></i> Checkpoint</h3>
+    <ul>
+        <li><label><input type="checkbox"><span>The page shows: navbar, dark header, Our Story, blue stats bar, Our Values, Meet Our Experts, footer.</span></label></li>
+        <li><label><input type="checkbox"><span>“About” is highlighted in the navbar.</span></label></li>
+        <li><label><input type="checkbox"><span>The “Our Story” blue label is styled (small, uppercase, blue).</span></label></li>
+        <li><label><input type="checkbox"><span>On a phone, all grids collapse neatly.</span></label></li>
+    </ul>
+    <p>Compare with the <a href="../reference/about-html.html">complete <code>about.html</code></a>.</p>
+</div>
+
+<div class="callout mistake"><p class="callout-title"><i class="fas fa-bug"></i> Common mistakes</p>
+<ul>
+<li><strong>The page header is hidden under the navbar:</strong> check that <code>.page-header</code> in <code>styles.css</code> has <code>padding: 140px 0 80px</code>.</li>
+<li><strong>The stats are dark on blue:</strong> <code>color: var(--white)</code> is missing from <code>.stats-bar</code>.</li>
+</ul></div>
+
+<nav class="pager"><a class="pager-card prev" href="../lessons/13-home-testimonials-clients.html"><small>← Previous</small><strong>Lesson 13 · Home Page, Part 4: Testimonials, Clients &amp; Responsive</strong></a><a class="pager-card next" href="../lessons/15-services.html"><small>Next →</small><strong>Lesson 15 · The Services Page</strong></a></nav>
+        </main>
+    </div>
+    <footer class="site-foot">TechFix Pro HTML &amp; CSS Guide · Built with HTML &amp; CSS only · Photos from Unsplash</footer>
+</body>
+</html>

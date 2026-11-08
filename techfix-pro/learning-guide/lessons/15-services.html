@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Services Page · TechFix Pro HTML &amp; CSS Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/guide.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="../index.html"><i class="fas fa-microchip"></i> TechFix Pro <span>HTML &amp; CSS Guide</span></a>
+        <a class="topbar-link" href="../solution/index.html" target="_blank"><i class="fas fa-eye"></i> <span>View finished site</span></a>
+    </header>
+    <div class="layout">
+        <aside class="sidebar">
+            <details class="toc-mobile">
+                <summary><i class="fas fa-list"></i> All lessons</summary>
+                <p class="toc-part">Start Here</p><ol class="toc-list">
+<li><a href="../index.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Welcome &amp; how to use this guide</span></a></li>
+</ol>
+<p class="toc-part">Part 1 · Getting Started</p><ol class="toc-list">
+<li><a href="../lessons/01-setup.html"><span class="toc-num">1</span><span>Setting up your computer</span></a></li>
+<li><a href="../lessons/02-html-basics.html"><span class="toc-num">2</span><span>HTML basics</span></a></li>
+<li><a href="../lessons/03-css-basics.html"><span class="toc-num">3</span><span>CSS basics</span></a></li>
+<li><a href="../lessons/04-project-setup.html"><span class="toc-num">4</span><span>Creating the project</span></a></li>
+</ol>
+<p class="toc-part">Part 2 · Shared Styles &amp; Layout</p><ol class="toc-list">
+<li><a href="../lessons/05-design-system.html"><span class="toc-num">5</span><span>The design system</span></a></li>
+<li><a href="../lessons/06-buttons-headers.html"><span class="toc-num">6</span><span>Buttons &amp; headings</span></a></li>
+<li><a href="../lessons/07-navbar.html"><span class="toc-num">7</span><span>The navigation bar</span></a></li>
+<li><a href="../lessons/08-footer.html"><span class="toc-num">8</span><span>The footer</span></a></li>
+<li><a href="../lessons/09-responsive.html"><span class="toc-num">9</span><span>Responsive design &amp; animation</span></a></li>
+</ol>
+<p class="toc-part">Part 3 · Building the Pages</p><ol class="toc-list">
+<li><a href="../lessons/10-home-hero.html"><span class="toc-num">10</span><span>Home: hero</span></a></li>
+<li><a href="../lessons/11-home-services-about.html"><span class="toc-num">11</span><span>Home: services &amp; about</span></a></li>
+<li><a href="../lessons/12-home-news-newsletter.html"><span class="toc-num">12</span><span>Home: news &amp; newsletter</span></a></li>
+<li><a href="../lessons/13-home-testimonials-clients.html"><span class="toc-num">13</span><span>Home: testimonials &amp; clients</span></a></li>
+<li><a href="../lessons/14-about.html"><span class="toc-num">14</span><span>About page</span></a></li>
+<li><a href="../lessons/15-services.html" aria-current="page" class="current"><span class="toc-num">15</span><span>Services page</span></a></li>
+<li><a href="../lessons/16-blog.html"><span class="toc-num">16</span><span>Blog page</span></a></li>
+<li><a href="../lessons/17-gallery.html"><span class="toc-num">17</span><span>Gallery page</span></a></li>
+<li><a href="../lessons/18-contact.html"><span class="toc-num">18</span><span>Contact page</span></a></li>
+</ol>
+<p class="toc-part">Part 4 · Polish &amp; Practice</p><ol class="toc-list">
+<li><a href="../lessons/19-images-organization.html"><span class="toc-num">19</span><span>Images &amp; organisation</span></a></li>
+<li><a href="../lessons/20-troubleshooting.html"><span class="toc-num">20</span><span>Troubleshooting guide</span></a></li>
+<li><a href="../lessons/21-final-checklist.html"><span class="toc-num">21</span><span>Exercises &amp; final checklist</span></a></li>
+<li><a href="../lessons/glossary.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Glossary of terms</span></a></li>
+</ol>
+<p class="toc-part">Reference code</p><ol class="toc-list toc-ref">
+<li><a href="../reference/index-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>index.html</span></a></li>
+<li><a href="../reference/about-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>about.html</span></a></li>
+<li><a href="../reference/services-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>services.html</span></a></li>
+<li><a href="../reference/blog-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>blog.html</span></a></li>
+<li><a href="../reference/gallery-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>gallery.html</span></a></li>
+<li><a href="../reference/contact-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>contact.html</span></a></li>
+<li><a href="../reference/styles-css.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>styles.css</span></a></li>
+</ol>
+            </details>
+            <nav class="toc-desktop" aria-label="Lessons"><p class="toc-part">Start Here</p><ol class="toc-list">
+<li><a href="../index.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Welcome &amp; how to use this guide</span></a></li>
+</ol>
+<p class="toc-part">Part 1 · Getting Started</p><ol class="toc-list">
+<li><a href="../lessons/01-setup.html"><span class="toc-num">1</span><span>Setting up your computer</span></a></li>
+<li><a href="../lessons/02-html-basics.html"><span class="toc-num">2</span><span>HTML basics</span></a></li>
+<li><a href="../lessons/03-css-basics.html"><span class="toc-num">3</span><span>CSS basics</span></a></li>
+<li><a href="../lessons/04-project-setup.html"><span class="toc-num">4</span><span>Creating the project</span></a></li>
+</ol>
+<p class="toc-part">Part 2 · Shared Styles &amp; Layout</p><ol class="toc-list">
+<li><a href="../lessons/05-design-system.html"><span class="toc-num">5</span><span>The design system</span></a></li>
+<li><a href="../lessons/06-buttons-headers.html"><span class="toc-num">6</span><span>Buttons &amp; headings</span></a></li>
+<li><a href="../lessons/07-navbar.html"><span class="toc-num">7</span><span>The navigation bar</span></a></li>
+<li><a href="../lessons/08-footer.html"><span class="toc-num">8</span><span>The footer</span></a></li>
+<li><a href="../lessons/09-responsive.html"><span class="toc-num">9</span><span>Responsive design &amp; animation</span></a></li>
+</ol>
+<p class="toc-part">Part 3 · Building the Pages</p><ol class="toc-list">
+<li><a href="../lessons/10-home-hero.html"><span class="toc-num">10</span><span>Home: hero</span></a></li>
+<li><a href="../lessons/11-home-services-about.html"><span class="toc-num">11</span><span>Home: services &amp; about</span></a></li>
+<li><a href="../lessons/12-home-news-newsletter.html"><span class="toc-num">12</span><span>Home: news &amp; newsletter</span></a></li>
+<li><a href="../lessons/13-home-testimonials-clients.html"><span class="toc-num">13</span><span>Home: testimonials &amp; clients</span></a></li>
+<li><a href="../lessons/14-about.html"><span class="toc-num">14</span><span>About page</span></a></li>
+<li><a href="../lessons/15-services.html" aria-current="page" class="current"><span class="toc-num">15</span><span>Services page</span></a></li>
+<li><a href="../lessons/16-blog.html"><span class="toc-num">16</span><span>Blog page</span></a></li>
+<li><a href="../lessons/17-gallery.html"><span class="toc-num">17</span><span>Gallery page</span></a></li>
+<li><a href="../lessons/18-contact.html"><span class="toc-num">18</span><span>Contact page</span></a></li>
+</ol>
+<p class="toc-part">Part 4 · Polish &amp; Practice</p><ol class="toc-list">
+<li><a href="../lessons/19-images-organization.html"><span class="toc-num">19</span><span>Images &amp; organisation</span></a></li>
+<li><a href="../lessons/20-troubleshooting.html"><span class="toc-num">20</span><span>Troubleshooting guide</span></a></li>
+<li><a href="../lessons/21-final-checklist.html"><span class="toc-num">21</span><span>Exercises &amp; final checklist</span></a></li>
+<li><a href="../lessons/glossary.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Glossary of terms</span></a></li>
+</ol>
+<p class="toc-part">Reference code</p><ol class="toc-list toc-ref">
+<li><a href="../reference/index-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>index.html</span></a></li>
+<li><a href="../reference/about-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>about.html</span></a></li>
+<li><a href="../reference/services-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>services.html</span></a></li>
+<li><a href="../reference/blog-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>blog.html</span></a></li>
+<li><a href="../reference/gallery-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>gallery.html</span></a></li>
+<li><a href="../reference/contact-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>contact.html</span></a></li>
+<li><a href="../reference/styles-css.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>styles.css</span></a></li>
+</ol></nav>
+        </aside>
+        <main class="content">
+<div class="progress"><span>Lesson 15 of 21</span><div class="progress-bar"><div style="width:71%"></div></div><span>71%</span></div>
+
+<header class="lesson-head">
+    <p class="eyebrow">Lesson 15 · Building the Pages</p>
+    <h1>The Services Page</h1>
+    <p class="lead">The Services page has three detailed service rows that alternate sides, three pricing cards (one “Most Popular”), and a four-step process with a line connecting the steps.</p>
+    <ul class="lesson-facts"><li><i class="far fa-clock"></i>About 60 minutes</li><li><i class="far fa-pen-to-square"></i>Edits: <code>services.html</code></li></ul>
+</header>
+
+<figure class="shot tall"><a href="../assets/img/services-full.jpg" target="_blank"><img src="../assets/img/services-full.jpg" alt="The finished Services page (scroll inside the picture)" loading="lazy"></a><figcaption>The finished Services page (scroll inside the picture)</figcaption></figure>
+
+<div class="goals">
+    <h3>By the end of this lesson you will be able to</h3>
+    <ul>
+        <li>Alternate background colours with <code>:nth-child(even)</code> and <code>:nth-child(odd)</code>.</li>
+        <li>Flip a two-column layout with <code>direction: rtl</code>.</li>
+        <li>Centre an absolutely-positioned badge with <code>left: 50%</code> + <code>translateX(-50%)</code>.</li>
+        <li>Draw a connecting line behind a row of circles.</li>
+    </ul>
+</div>
+
+<div class="steps">
+<section class="step">
+<h3>Add the page header</h3>
+<p>Open <code>services.html</code>. Replace <code>&lt;!-- PAGE CONTENT GOES HERE --&gt;</code> with:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> services.html</span><span class="code-where">Between <code>&lt;/nav&gt;</code> and <code>&lt;!-- Footer --&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">header</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;page-header&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fade-in&quot;</span><span class="p">&gt;</span>Our Services<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fade-in stagger-1&quot;</span><span class="p">&gt;</span>Comprehensive repair solutions for every device in your life. Quality parts, expert hands, guaranteed results.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;breadcrumbs fade-in stagger-2&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;index.html&quot;</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-chevron-right&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Services
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span></code></pre></figure>
+</section>
+
+<section class="step">
+<h3>Add the first service row</h3>
+<p>HTML, directly above <code>&lt;!-- Footer --&gt;</code>:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> services.html</span><span class="code-where">Directly above <code>&lt;!-- Footer --&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;service-detail&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;detail-grid&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;detail-content fade-in&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;price-tag&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-tag&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Starting from $49<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Smartphone Repair<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>From cracked screens to water damage, our smartphone repair service covers all major brands including iPhone, Samsung, Google Pixel, and more. We use only high-quality replacement parts that match or exceed OEM standards.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;detail-list&quot;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Screen replacement <span class="err">&amp;</span> glass repair<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Battery replacement <span class="err">&amp;</span> optimization<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Charging port <span class="err">&amp;</span> dock connector fixes<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Water damage recovery <span class="err">&amp;</span> cleaning<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Camera <span class="err">&amp;</span> speaker repairs<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Motherboard <span class="err">&amp;</span> logic board repairs<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;contact.html&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-primary&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-calendar-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Book Repair<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;detail-image fade-in stagger-2&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=700&amp;h=450&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Phone repair&quot;</span> <span class="na">loading</span><span class="o">=</span><span class="s">&quot;lazy&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span></code></pre></figure>
+<p>CSS (delete the placeholder comment in <code>&lt;style&gt;</code> first):</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> services.html</span><span class="code-where">In the <code>&lt;style&gt;</code> block</span></figcaption><pre><code>.service-detail { padding: 80px 0; }
+.service-detail:nth-child(even) { background: var(--light); }
+.service-detail:nth-child(odd) { background: var(--white); }
+.detail-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+.detail-grid.reverse { direction: rtl; }
+.detail-grid.reverse &gt; * { direction: ltr; }
+.detail-content h2 { font-size: 1.85rem; font-weight: 800; margin-bottom: 1rem; }
+.detail-content p { color: var(--gray); line-height: 1.8; margin-bottom: 1.25rem; }
+.detail-list { list-style: none; margin-bottom: 1.5rem; }
+.detail-list li { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.6rem; color: var(--dark-gray); font-size: 0.95rem; }
+.detail-list li i { color: var(--primary); font-size: 0.85rem; }
+.detail-image img { width: 100%; border-radius: var(--radius-lg); box-shadow: var(--shadow-lg); object-fit: cover; height: 360px; }
+.price-tag { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--primary); color: var(--white); padding: 0.5rem 1rem; border-radius: 50px; font-weight: 700; font-size: 0.9rem; margin-bottom: 1rem; }</code></pre></figure>
+<ul>
+    <li><code>.price-tag</code> is a blue pill (like the hero badge) showing the starting price.</li>
+    <li><code>.detail-list li i</code> styles the small blue tick icons.</li>
+</ul>
+<figure class="shot"><a href="../assets/img/services-detail-1.jpg" target="_blank"><img src="../assets/img/services-detail-1.jpg" alt="The first service row" loading="lazy"></a><figcaption>The first service row</figcaption></figure>
+</section>
+
+<section class="step">
+<h3>Add rows 2 and 3</h3>
+<p>Add these two sections directly above <code>&lt;!-- Footer --&gt;</code>, one after the other. Notice that row 2's grid has an <strong>extra class</strong>, <code>reverse</code>:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> services.html</span><span class="code-where">Directly above <code>&lt;!-- Footer --&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;service-detail&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;detail-grid reverse&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;detail-content fade-in&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;price-tag&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-tag&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Starting from $79<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Laptop <span class="err">&amp;</span> Computer Repair<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Whether it&#39;s a slow performance issue, broken screen, or hardware failure, our laptop specialists diagnose and fix problems fast. We service all brands including MacBook, Dell, HP, Lenovo, and custom builds.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;detail-list&quot;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Screen <span class="err">&amp;</span> keyboard replacement<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> SSD <span class="err">&amp;</span> RAM upgrades<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Virus <span class="err">&amp;</span> malware removal<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Overheating <span class="err">&amp;</span> fan repairs<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Data recovery <span class="err">&amp;</span> backup<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> OS installation <span class="err">&amp;</span> optimization<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;contact.html&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-primary&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-calendar-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Book Repair<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;detail-image fade-in stagger-2&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=700&amp;h=450&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Laptop repair&quot;</span> <span class="na">loading</span><span class="o">=</span><span class="s">&quot;lazy&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span></code></pre></figure>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> services.html</span><span class="code-where">Directly above <code>&lt;!-- Footer --&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;service-detail&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;detail-grid&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;detail-content fade-in&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;price-tag&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-tag&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Starting from $59<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Tablet <span class="err">&amp;</span> iPad Repair<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Tablets are essential for work and play. Our technicians are trained to handle delicate tablet repairs with precision, ensuring your device returns in perfect working condition.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;detail-list&quot;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Cracked glass <span class="err">&amp;</span> digitizer replacement<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Battery replacement<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Software troubleshooting<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Data recovery<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Charging port repair<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Button <span class="err">&amp;</span> connector fixes<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;contact.html&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-primary&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-calendar-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Book Repair<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;detail-image fade-in stagger-2&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=700&amp;h=450&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Tablet repair&quot;</span> <span class="na">loading</span><span class="o">=</span><span class="s">&quot;lazy&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span></code></pre></figure>
+<h4>Two clever tricks in the CSS you already added</h4>
+<ul>
+    <li><strong>Alternating backgrounds:</strong> <code>.service-detail:nth-child(even)</code> selects service sections that are an <em>even-numbered</em> child of <code>&lt;body&gt;</code>. Counting the body's children: the nav is 1st, the header 2nd, row 1 is 3rd (odd, white), row 2 is 4th (even, light grey), row 3 is 5th (odd, white). The rows alternate automatically.</li>
+    <li><strong>Swapping sides:</strong> <code>.detail-grid.reverse { direction: rtl; }</code> tells the grid to lay out its columns <em>right-to-left</em> (the way Arabic and Hebrew are written), so the image goes on the left. <code>.detail-grid.reverse &gt; * { direction: ltr; }</code> switches the <em>text inside</em> back to left-to-right so it reads normally. (<code>*</code> means “any element”.)</li>
+</ul>
+<figure class="shot"><a href="../assets/img/services-detail-2.jpg" target="_blank"><img src="../assets/img/services-detail-2.jpg" alt="Row 2 with the `reverse` class: image on the left, grey background" loading="lazy"></a><figcaption>Row 2 with the <code>reverse</code> class: image on the left, grey background</figcaption></figure>
+</section>
+
+<section class="step">
+<h3>Add the pricing plans</h3>
+<p>HTML, directly above <code>&lt;!-- Footer --&gt;</code>:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> services.html</span><span class="code-where">Directly above <code>&lt;!-- Footer --&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pricing&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;section-header fade-in&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;overline&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-dollar-sign&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Pricing<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Repair Pricing Plans<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Transparent pricing with no hidden fees. Choose the plan that fits your needs.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pricing-grid&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pricing-card fade-in stagger-1&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Basic Repair<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;price&quot;</span><span class="p">&gt;</span>$49<span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>/service<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;desc&quot;</span><span class="p">&gt;</span>Ideal for simple fixes and diagnostics.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pricing-features&quot;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Free diagnostic<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Screen protector install<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Software cleanup<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> 30-day warranty<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Standard turnaround<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;contact.html&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-outline&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;width:100%&quot;</span><span class="p">&gt;</span>Get Started<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pricing-card featured fade-in stagger-2&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;featured-badge&quot;</span><span class="p">&gt;</span>Most Popular<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Standard Repair<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;price&quot;</span><span class="p">&gt;</span>$99<span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>/service<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;desc&quot;</span><span class="p">&gt;</span>Our most comprehensive single-device repair.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pricing-features&quot;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Free diagnostic<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Premium parts<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Data backup included<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> 90-day warranty<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Same-day service<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;contact.html&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-primary&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;width:100%&quot;</span><span class="p">&gt;</span>Get Started<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pricing-card fade-in stagger-3&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Business Support<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;price&quot;</span><span class="p">&gt;</span>$199<span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>/month<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;desc&quot;</span><span class="p">&gt;</span>Ongoing support for businesses with multiple devices.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">ul</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;pricing-features&quot;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Unlimited diagnostics<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Priority service<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> On-site visits<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> 1-year warranty<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-check&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Dedicated account manager<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;contact.html&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-outline&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;width:100%&quot;</span><span class="p">&gt;</span>Contact Sales<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span></code></pre></figure>
+<p>CSS:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> services.html</span><span class="code-where">In the <code>&lt;style&gt;</code> block, below the previous CSS</span></figcaption><pre><code>.pricing { padding: 100px 0; background: var(--light); }
+.pricing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.75rem; }
+.pricing-card {
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    padding: 2.5rem 2rem;
+    text-align: center;
+    border: 1px solid var(--border);
+    transition: var(--transition);
+    position: relative;
+}
+.pricing-card:hover { transform: translateY(-8px); box-shadow: var(--shadow-lg); border-color: transparent; }
+.pricing-card.featured { border: 2px solid var(--primary); }
+.featured-badge {
+    position: absolute;
+    top: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--primary);
+    color: var(--white);
+    padding: 0.35rem 1rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.pricing-card h3 { font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem; }
+.pricing-card .price { font-size: 2.5rem; font-weight: 800; color: var(--primary); margin-bottom: 0.25rem; }
+.pricing-card .price span { font-size: 1rem; color: var(--gray); font-weight: 400; }
+.pricing-card .desc { color: var(--gray); font-size: 0.9rem; margin-bottom: 1.5rem; }
+.pricing-features { list-style: none; text-align: left; margin-bottom: 1.5rem; }
+.pricing-features li { padding: 0.5rem 0; border-bottom: 1px solid var(--border); font-size: 0.9rem; color: var(--dark-gray); display: flex; align-items: center; gap: 0.5rem; }
+.pricing-features li i { color: #10b981; font-size: 0.8rem; }</code></pre></figure>
+<ul>
+    <li>The middle card has two classes, <code>pricing-card featured</code>. <code>.pricing-card.featured</code> (no space) matches only cards with <em>both</em> classes and gives it a thicker blue border.</li>
+    <li><strong>Centring the badge:</strong> <code>left: 50%</code> puts the badge's <em>left edge</em> at the middle of the card. <code>transform: translateX(-50%)</code> then slides it back by half of its <em>own</em> width, so its centre lines up with the card's centre. <code>top: -12px</code> makes it sit across the top border.</li>
+    <li><code>.price span</code> makes “/service” small and grey next to the big price.</li>
+    <li>The buttons use an inline style, <code>style="width:100%"</code>, to stretch across the card.</li>
+</ul>
+<figure class="shot"><a href="../assets/img/services-pricing.jpg" target="_blank"><img src="../assets/img/services-pricing.jpg" alt="Pricing cards with the featured middle plan" loading="lazy"></a><figcaption>Pricing cards with the featured middle plan</figcaption></figure>
+</section>
+
+<section class="step">
+<h3>Add the repair process</h3>
+<p>HTML, directly above <code>&lt;!-- Footer --&gt;</code>:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> services.html</span><span class="code-where">Directly above <code>&lt;!-- Footer --&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;process&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;section-header fade-in&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;overline&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-cogs&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> How It Works<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Our Repair Process<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Simple, transparent, and hassle-free from start to finish.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;process-steps&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;step fade-in stagger-1&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;step-number&quot;</span><span class="p">&gt;</span>1<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Diagnose<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Bring your device in for a free, no-obligation diagnostic assessment.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;step fade-in stagger-2&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;step-number&quot;</span><span class="p">&gt;</span>2<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Quote<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Receive a transparent quote with no hidden fees before any work begins.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;step fade-in stagger-3&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;step-number&quot;</span><span class="p">&gt;</span>3<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Repair<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Our certified technicians fix your device using quality parts.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;step fade-in stagger-4&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;step-number&quot;</span><span class="p">&gt;</span>4<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Return<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Pick up your fully functional device, backed by our warranty.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span></code></pre></figure>
+<p>CSS:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> services.html</span><span class="code-where">In the <code>&lt;style&gt;</code> block, below the previous CSS</span></figcaption><pre><code>.process { padding: 100px 0; background: var(--white); }
+.process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; position: relative; }
+.process-steps::before {
+    content: &#39;&#39;;
+    position: absolute;
+    top: 40px;
+    left: 12.5%;
+    right: 12.5%;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary), var(--primary-light));
+    z-index: 0;
+}
+.step { text-align: center; position: relative; z-index: 1; }
+.step-number {
+    width: 80px;
+    height: 80px;
+    background: var(--white);
+    border: 3px solid var(--primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--primary);
+    transition: var(--transition);
+}
+.step:hover .step-number { background: var(--primary); color: var(--white); transform: scale(1.08); }
+.step h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; }
+.step p { color: var(--gray); font-size: 0.9rem; line-height: 1.6; }</code></pre></figure>
+<p><strong>The connecting line</strong> is <code>.process-steps::before</code>: a 2px-high gradient line placed 40px down (the middle of the 80px circles), running from 12.5% to 12.5% from each edge. That's the centre of the first column to the centre of the last, because each of the 4 columns is 25% wide. The steps have <code>z-index: 1</code> and the circles have a white background, so the circles cover the line and it only shows <em>between</em> them.</p>
+<figure class="shot"><a href="../assets/img/services-process.jpg" target="_blank"><img src="../assets/img/services-process.jpg" alt="The four-step process joined by a line" loading="lazy"></a><figcaption>The four-step process joined by a line</figcaption></figure>
+</section>
+
+<section class="step">
+<h3>Make it responsive</h3>
+<p>Add at the very end of the <code>&lt;style&gt;</code> block:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> services.html</span><span class="code-where">At the very end of the <code>&lt;style&gt;</code> block</span></figcaption><pre><code>@media (max-width: 1024px) {
+    .detail-grid { grid-template-columns: 1fr; gap: 3rem; }
+    .detail-grid.reverse { direction: ltr; }
+    .pricing-grid { grid-template-columns: 1fr; max-width: 480px; margin: 0 auto; }
+    .process-steps { grid-template-columns: repeat(2, 1fr); }
+    .process-steps::before { display: none; }
+}
+@media (max-width: 768px) {
+    .process-steps { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto; }
+}</code></pre></figure>
+<p>At 1024px the service rows stack and <code>reverse</code> is cancelled (<code>direction: ltr</code>), so every row shows text then image. The pricing cards stack, and the process becomes a 2×2 grid. The line is hidden because it no longer makes sense there. At 768px the process becomes one column.</p>
+<figure class="shot tall"><a href="../assets/img/services-mobile-full.jpg" target="_blank"><img src="../assets/img/services-mobile-full.jpg" alt="The Services page on a phone (scroll inside the picture)" loading="lazy"></a><figcaption>The Services page on a phone (scroll inside the picture)</figcaption></figure>
+</section>
+</div>
+
+<div class="checkpoint">
+    <h3><i class="fas fa-flag-checkered"></i> Checkpoint</h3>
+    <ul>
+        <li><label><input type="checkbox"><span>Three service rows: white, grey, white backgrounds, with the image switching sides in row 2.</span></label></li>
+        <li><label><input type="checkbox"><span>The “Most Popular” badge is centred on the top border of the middle pricing card.</span></label></li>
+        <li><label><input type="checkbox"><span>A blue line joins the four numbered circles, and hovering a step fills its circle with blue.</span></label></li>
+        <li><label><input type="checkbox"><span>“Book Repair” and “Get Started” buttons go to the Contact page.</span></label></li>
+    </ul>
+    <p>Compare with the <a href="../reference/services-html.html">complete <code>services.html</code></a>.</p>
+</div>
+
+<div class="callout mistake"><p class="callout-title"><i class="fas fa-bug"></i> Common mistakes</p>
+<ul>
+<li><strong>All rows have the same background:</strong> <code>:nth-child</code> counts <em>every</em> child of <code>&lt;body&gt;</code>. If you left an extra element (like a test <code>&lt;div&gt;</code>) between the navbar and the rows, the counting shifts.</li>
+<li><strong>Row 2's text is right-aligned or punctuation looks odd:</strong> you're missing <code>.detail-grid.reverse &gt; * { direction: ltr; }</code>.</li>
+<li><strong>The line goes through the circles:</strong> <code>.step-number</code> needs <code>background: var(--white)</code>, and <code>.step</code> needs <code>position: relative; z-index: 1</code>.</li>
+</ul></div>
+
+<nav class="pager"><a class="pager-card prev" href="../lessons/14-about.html"><small>← Previous</small><strong>Lesson 14 · The About Page</strong></a><a class="pager-card next" href="../lessons/16-blog.html"><small>Next →</small><strong>Lesson 16 · The Blog Page</strong></a></nav>
+        </main>
+    </div>
+    <footer class="site-foot">TechFix Pro HTML &amp; CSS Guide · Built with HTML &amp; CSS only · Photos from Unsplash</footer>
+</body>
+</html>

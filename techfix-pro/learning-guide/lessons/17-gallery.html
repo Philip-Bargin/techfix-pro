@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gallery Page: Filters &amp; Lightbox Without JavaScript · TechFix Pro HTML &amp; CSS Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/guide.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="../index.html"><i class="fas fa-microchip"></i> TechFix Pro <span>HTML &amp; CSS Guide</span></a>
+        <a class="topbar-link" href="../solution/index.html" target="_blank"><i class="fas fa-eye"></i> <span>View finished site</span></a>
+    </header>
+    <div class="layout">
+        <aside class="sidebar">
+            <details class="toc-mobile">
+                <summary><i class="fas fa-list"></i> All lessons</summary>
+                <p class="toc-part">Start Here</p><ol class="toc-list">
+<li><a href="../index.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Welcome &amp; how to use this guide</span></a></li>
+</ol>
+<p class="toc-part">Part 1 · Getting Started</p><ol class="toc-list">
+<li><a href="../lessons/01-setup.html"><span class="toc-num">1</span><span>Setting up your computer</span></a></li>
+<li><a href="../lessons/02-html-basics.html"><span class="toc-num">2</span><span>HTML basics</span></a></li>
+<li><a href="../lessons/03-css-basics.html"><span class="toc-num">3</span><span>CSS basics</span></a></li>
+<li><a href="../lessons/04-project-setup.html"><span class="toc-num">4</span><span>Creating the project</span></a></li>
+</ol>
+<p class="toc-part">Part 2 · Shared Styles &amp; Layout</p><ol class="toc-list">
+<li><a href="../lessons/05-design-system.html"><span class="toc-num">5</span><span>The design system</span></a></li>
+<li><a href="../lessons/06-buttons-headers.html"><span class="toc-num">6</span><span>Buttons &amp; headings</span></a></li>
+<li><a href="../lessons/07-navbar.html"><span class="toc-num">7</span><span>The navigation bar</span></a></li>
+<li><a href="../lessons/08-footer.html"><span class="toc-num">8</span><span>The footer</span></a></li>
+<li><a href="../lessons/09-responsive.html"><span class="toc-num">9</span><span>Responsive design &amp; animation</span></a></li>
+</ol>
+<p class="toc-part">Part 3 · Building the Pages</p><ol class="toc-list">
+<li><a href="../lessons/10-home-hero.html"><span class="toc-num">10</span><span>Home: hero</span></a></li>
+<li><a href="../lessons/11-home-services-about.html"><span class="toc-num">11</span><span>Home: services &amp; about</span></a></li>
+<li><a href="../lessons/12-home-news-newsletter.html"><span class="toc-num">12</span><span>Home: news &amp; newsletter</span></a></li>
+<li><a href="../lessons/13-home-testimonials-clients.html"><span class="toc-num">13</span><span>Home: testimonials &amp; clients</span></a></li>
+<li><a href="../lessons/14-about.html"><span class="toc-num">14</span><span>About page</span></a></li>
+<li><a href="../lessons/15-services.html"><span class="toc-num">15</span><span>Services page</span></a></li>
+<li><a href="../lessons/16-blog.html"><span class="toc-num">16</span><span>Blog page</span></a></li>
+<li><a href="../lessons/17-gallery.html" aria-current="page" class="current"><span class="toc-num">17</span><span>Gallery page</span></a></li>
+<li><a href="../lessons/18-contact.html"><span class="toc-num">18</span><span>Contact page</span></a></li>
+</ol>
+<p class="toc-part">Part 4 · Polish &amp; Practice</p><ol class="toc-list">
+<li><a href="../lessons/19-images-organization.html"><span class="toc-num">19</span><span>Images &amp; organisation</span></a></li>
+<li><a href="../lessons/20-troubleshooting.html"><span class="toc-num">20</span><span>Troubleshooting guide</span></a></li>
+<li><a href="../lessons/21-final-checklist.html"><span class="toc-num">21</span><span>Exercises &amp; final checklist</span></a></li>
+<li><a href="../lessons/glossary.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Glossary of terms</span></a></li>
+</ol>
+<p class="toc-part">Reference code</p><ol class="toc-list toc-ref">
+<li><a href="../reference/index-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>index.html</span></a></li>
+<li><a href="../reference/about-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>about.html</span></a></li>
+<li><a href="../reference/services-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>services.html</span></a></li>
+<li><a href="../reference/blog-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>blog.html</span></a></li>
+<li><a href="../reference/gallery-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>gallery.html</span></a></li>
+<li><a href="../reference/contact-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>contact.html</span></a></li>
+<li><a href="../reference/styles-css.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>styles.css</span></a></li>
+</ol>
+            </details>
+            <nav class="toc-desktop" aria-label="Lessons"><p class="toc-part">Start Here</p><ol class="toc-list">
+<li><a href="../index.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Welcome &amp; how to use this guide</span></a></li>
+</ol>
+<p class="toc-part">Part 1 · Getting Started</p><ol class="toc-list">
+<li><a href="../lessons/01-setup.html"><span class="toc-num">1</span><span>Setting up your computer</span></a></li>
+<li><a href="../lessons/02-html-basics.html"><span class="toc-num">2</span><span>HTML basics</span></a></li>
+<li><a href="../lessons/03-css-basics.html"><span class="toc-num">3</span><span>CSS basics</span></a></li>
+<li><a href="../lessons/04-project-setup.html"><span class="toc-num">4</span><span>Creating the project</span></a></li>
+</ol>
+<p class="toc-part">Part 2 · Shared Styles &amp; Layout</p><ol class="toc-list">
+<li><a href="../lessons/05-design-system.html"><span class="toc-num">5</span><span>The design system</span></a></li>
+<li><a href="../lessons/06-buttons-headers.html"><span class="toc-num">6</span><span>Buttons &amp; headings</span></a></li>
+<li><a href="../lessons/07-navbar.html"><span class="toc-num">7</span><span>The navigation bar</span></a></li>
+<li><a href="../lessons/08-footer.html"><span class="toc-num">8</span><span>The footer</span></a></li>
+<li><a href="../lessons/09-responsive.html"><span class="toc-num">9</span><span>Responsive design &amp; animation</span></a></li>
+</ol>
+<p class="toc-part">Part 3 · Building the Pages</p><ol class="toc-list">
+<li><a href="../lessons/10-home-hero.html"><span class="toc-num">10</span><span>Home: hero</span></a></li>
+<li><a href="../lessons/11-home-services-about.html"><span class="toc-num">11</span><span>Home: services &amp; about</span></a></li>
+<li><a href="../lessons/12-home-news-newsletter.html"><span class="toc-num">12</span><span>Home: news &amp; newsletter</span></a></li>
+<li><a href="../lessons/13-home-testimonials-clients.html"><span class="toc-num">13</span><span>Home: testimonials &amp; clients</span></a></li>
+<li><a href="../lessons/14-about.html"><span class="toc-num">14</span><span>About page</span></a></li>
+<li><a href="../lessons/15-services.html"><span class="toc-num">15</span><span>Services page</span></a></li>
+<li><a href="../lessons/16-blog.html"><span class="toc-num">16</span><span>Blog page</span></a></li>
+<li><a href="../lessons/17-gallery.html" aria-current="page" class="current"><span class="toc-num">17</span><span>Gallery page</span></a></li>
+<li><a href="../lessons/18-contact.html"><span class="toc-num">18</span><span>Contact page</span></a></li>
+</ol>
+<p class="toc-part">Part 4 · Polish &amp; Practice</p><ol class="toc-list">
+<li><a href="../lessons/19-images-organization.html"><span class="toc-num">19</span><span>Images &amp; organisation</span></a></li>
+<li><a href="../lessons/20-troubleshooting.html"><span class="toc-num">20</span><span>Troubleshooting guide</span></a></li>
+<li><a href="../lessons/21-final-checklist.html"><span class="toc-num">21</span><span>Exercises &amp; final checklist</span></a></li>
+<li><a href="../lessons/glossary.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Glossary of terms</span></a></li>
+</ol>
+<p class="toc-part">Reference code</p><ol class="toc-list toc-ref">
+<li><a href="../reference/index-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>index.html</span></a></li>
+<li><a href="../reference/about-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>about.html</span></a></li>
+<li><a href="../reference/services-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>services.html</span></a></li>
+<li><a href="../reference/blog-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>blog.html</span></a></li>
+<li><a href="../reference/gallery-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>gallery.html</span></a></li>
+<li><a href="../reference/contact-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>contact.html</span></a></li>
+<li><a href="../reference/styles-css.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>styles.css</span></a></li>
+</ol></nav>
+        </aside>
+        <main class="content">
+<div class="progress"><span>Lesson 17 of 21</span><div class="progress-bar"><div style="width:81%"></div></div><span>81%</span></div>
+
+<header class="lesson-head">
+    <p class="eyebrow">Lesson 17 · Building the Pages</p>
+    <h1>The Gallery Page: Filters &amp; Lightbox Without JavaScript</h1>
+    <p class="lead">The Gallery shows nine photos in a grid. Hovering a photo reveals its caption, filter buttons show only one category, and clicking a photo opens it full-screen in a “lightbox”. The original site uses JavaScript for this; you will build all of it with HTML and CSS alone.</p>
+    <ul class="lesson-facts"><li><i class="far fa-clock"></i>About 75 minutes</li><li><i class="fas fa-signal"></i>The trickiest lesson. Take your time!</li><li><i class="far fa-pen-to-square"></i>Edits: <code>gallery.html</code></li></ul>
+</header>
+
+<div class="shot-row"><figure class="shot"><a href="../assets/img/gallery-section.jpg" target="_blank"><img src="../assets/img/gallery-section.jpg" alt="The photo grid (“All” selected)" loading="lazy"></a><figcaption>The photo grid (“All” selected)</figcaption></figure><figure class="shot"><a href="../assets/img/gallery-filter-repairs.jpg" target="_blank"><img src="../assets/img/gallery-filter-repairs.jpg" alt="After clicking “Repairs”" loading="lazy"></a><figcaption>After clicking “Repairs”</figcaption></figure></div>
+
+<div class="goals">
+    <h3>By the end of this lesson you will be able to</h3>
+    <ul>
+        <li>Build a photo grid where some photos span two columns, using <code>aspect-ratio</code>.</li>
+        <li>Reveal a caption on hover with an overlay that fades in.</li>
+        <li>Build filter buttons with hidden radio buttons, the <code>:checked</code> selector, <code>~</code>, <code>:not()</code> and attribute selectors.</li>
+        <li>Build a lightbox with links and the <code>:target</code> selector.</li>
+    </ul>
+</div>
+
+<h2>Part A — The photo grid</h2>
+<div class="steps">
+<section class="step">
+<h3>Add the page header</h3>
+<p>Open <code>gallery.html</code>. Replace <code>&lt;!-- PAGE CONTENT GOES HERE --&gt;</code> with:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> gallery.html</span><span class="code-where">Between <code>&lt;/nav&gt;</code> and <code>&lt;!-- Footer --&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">header</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;page-header&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fade-in&quot;</span><span class="p">&gt;</span>Our Gallery<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fade-in stagger-1&quot;</span><span class="p">&gt;</span>A look inside our workshop, team, and the repairs we take pride in.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;breadcrumbs fade-in stagger-2&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;index.html&quot;</span><span class="p">&gt;</span>Home<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-chevron-right&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#&quot;</span><span class="p">&gt;</span>Media<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-chevron-right&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span> Gallery
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">header</span><span class="p">&gt;</span></code></pre></figure>
+</section>
+
+<section class="step">
+<h3>Add the gallery section with the first photo</h3>
+<p>Directly above <code>&lt;!-- Footer --&gt;</code>, add the section frame with one photo:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> gallery.html</span><span class="code-where">Directly above <code>&lt;!-- Footer --&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;gallery&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+        <span class="cm">&lt;!-- filters go here (Part B) --&gt;</span>
+
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;gallery-grid&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#photo-1&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;gallery-item wide&quot;</span> <span class="na">data-category</span><span class="o">=</span><span class="s">&quot;workshop&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=900&amp;h=500&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Main workshop&quot;</span> <span class="na">loading</span><span class="o">=</span><span class="s">&quot;lazy&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;gallery-overlay&quot;</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;zoom-icon&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-expand&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>Main Repair Workshop<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+                    <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Our state-of-the-art facility<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+            <span class="cm">&lt;!-- more photos go here --&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span></code></pre></figure>
+<p>Each photo is a <strong>link</strong> (<code>&lt;a&gt;</code>) because clicking it will open the lightbox. Two attributes matter later:</p>
+<ul>
+    <li><code>href="#photo-1"</code> links to the element on this page with <code>id="photo-1"</code>. That will be its lightbox.</li>
+    <li><code>data-category="workshop"</code> is a <strong>custom data attribute</strong>. Attributes starting with <code>data-</code> let you store your own information on an element. CSS can read it, which is how the filters will work.</li>
+</ul>
+</section>
+
+<section class="step">
+<h3>Add the other eight photos</h3>
+<p>Replace <code>&lt;!-- more photos go here --&gt;</code> with:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> gallery.html</span><span class="code-where">Replace <code>&lt;!-- more photos go here --&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#photo-2&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;gallery-item&quot;</span> <span class="na">data-category</span><span class="o">=</span><span class="s">&quot;repairs&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=600&amp;h=450&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Phone repair&quot;</span> <span class="na">loading</span><span class="o">=</span><span class="s">&quot;lazy&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;gallery-overlay&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;zoom-icon&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-expand&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>Precision Phone Repair<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>iPhone motherboard work<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#photo-3&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;gallery-item&quot;</span> <span class="na">data-category</span><span class="o">=</span><span class="s">&quot;team&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&amp;h=450&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Team meeting&quot;</span> <span class="na">loading</span><span class="o">=</span><span class="s">&quot;lazy&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;gallery-overlay&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;zoom-icon&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-expand&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>Team Training Session<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Weekly skills workshop<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#photo-4&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;gallery-item&quot;</span> <span class="na">data-category</span><span class="o">=</span><span class="s">&quot;workshop&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&amp;h=450&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Circuit board&quot;</span> <span class="na">loading</span><span class="o">=</span><span class="s">&quot;lazy&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;gallery-overlay&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;zoom-icon&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-expand&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>Microsoldering Station<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Advanced repair equipment<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#photo-5&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;gallery-item wide&quot;</span> <span class="na">data-category</span><span class="o">=</span><span class="s">&quot;repairs&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=900&amp;h=500&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Laptop repair&quot;</span> <span class="na">loading</span><span class="o">=</span><span class="s">&quot;lazy&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;gallery-overlay&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;zoom-icon&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-expand&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>Laptop Disassembly<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Deep diagnostic repair<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#photo-6&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;gallery-item&quot;</span> <span class="na">data-category</span><span class="o">=</span><span class="s">&quot;team&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&amp;h=450&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Customer service&quot;</span> <span class="na">loading</span><span class="o">=</span><span class="s">&quot;lazy&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;gallery-overlay&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;zoom-icon&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-expand&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>Customer Consultation<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Explaining repair options<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#photo-7&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;gallery-item&quot;</span> <span class="na">data-category</span><span class="o">=</span><span class="s">&quot;workshop&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1550009158-9ebf69173e03?w=600&amp;h=450&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Tools&quot;</span> <span class="na">loading</span><span class="o">=</span><span class="s">&quot;lazy&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;gallery-overlay&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;zoom-icon&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-expand&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>Specialized Tool Set<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Professional-grade instruments<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#photo-8&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;gallery-item&quot;</span> <span class="na">data-category</span><span class="o">=</span><span class="s">&quot;repairs&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=600&amp;h=450&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Tablet repair&quot;</span> <span class="na">loading</span><span class="o">=</span><span class="s">&quot;lazy&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;gallery-overlay&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;zoom-icon&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-expand&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>Tablet Screen Replacement<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>iPad Pro glass repair<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#photo-9&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;gallery-item&quot;</span> <span class="na">data-category</span><span class="o">=</span><span class="s">&quot;team&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&amp;h=450&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Team photo&quot;</span> <span class="na">loading</span><span class="o">=</span><span class="s">&quot;lazy&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;gallery-overlay&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;zoom-icon&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-expand&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>The TechFix Pro Team<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>2026 Team photo<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span></code></pre></figure>
+<p>Check that each photo links to its own number (<code>#photo-2</code> … <code>#photo-9</code>) and has the right <code>data-category</code>: <code>workshop</code>, <code>repairs</code> or <code>team</code>.</p>
+</section>
+
+<section class="step">
+<h3>Style the grid</h3>
+<p>Add to the <code>&lt;style&gt;</code> block (delete the placeholder comment first):</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> gallery.html</span><span class="code-where">In the <code>&lt;style&gt;</code> block</span></figcaption><pre><code>.gallery { padding: 80px 0; background: var(--light); }
+
+.gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+.gallery-item {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    aspect-ratio: 4/3;
+    cursor: pointer;
+}
+.gallery-item img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
+.gallery-item:hover img { transform: scale(1.1); }
+.gallery-item.wide { grid-column: span 2; }</code></pre></figure>
+<ul>
+    <li><code>aspect-ratio: 4/3</code> keeps every tile in a 4:3 shape (4 wide, 3 tall) whatever its width, so the grid stays tidy.</li>
+    <li><code>.gallery-item.wide { grid-column: span 2; }</code> makes photos 1 and 5 twice as wide.</li>
+    <li>The image zoom on hover works like the news cards: <code>overflow: hidden</code> on the tile clips the scaled image.</li>
+</ul>
+</section>
+
+<section class="step">
+<h3>Add the hover overlay</h3>
+<p>Add to the <code>&lt;style&gt;</code> block:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> gallery.html</span><span class="code-where">In the <code>&lt;style&gt;</code> block, below the grid CSS</span></figcaption><pre><code>.gallery-overlay {
+    position: absolute; inset: 0;
+    background: linear-gradient(to top, rgba(15,23,42,0.85) 0%, transparent 60%);
+    display: flex; flex-direction: column; justify-content: flex-end;
+    padding: 1.5rem;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+.gallery-item:hover .gallery-overlay,
+.gallery-item:focus .gallery-overlay { opacity: 1; }
+.gallery-overlay h4 { color: var(--white); font-size: 1.1rem; font-weight: 700; margin-bottom: 0.25rem; }
+.gallery-overlay span { color: var(--gray-light); font-size: 0.85rem; }
+.gallery-overlay .zoom-icon {
+    position: absolute; top: 1rem; right: 1rem;
+    width: 40px; height: 40px;
+    background: rgba(255,255,255,0.15); backdrop-filter: blur(4px);
+    border-radius: 50%; display: flex; align-items: center; justify-content: center;
+    color: var(--white); font-size: 0.9rem;
+}</code></pre></figure>
+<ul>
+    <li><code>.gallery-overlay</code> covers the whole tile (<code>inset: 0</code>) with a gradient that goes from dark at the bottom to <code>transparent</code> at 60% height, so the caption is readable.</li>
+    <li>It's a flex <strong>column</strong> with <code>justify-content: flex-end</code>, which pushes the caption to the bottom.</li>
+    <li>It starts at <code>opacity: 0</code> and fades to <code>1</code> on <code>:hover</code>. It also appears on <code>:focus</code>, when someone tabs to the photo with the keyboard.</li>
+</ul>
+<figure class="shot"><a href="../assets/img/gallery-hover.jpg" target="_blank"><img src="../assets/img/gallery-hover.jpg" alt="Hovering a photo reveals its title and an expand icon" loading="lazy"></a><figcaption>Hovering a photo reveals its title and an expand icon</figcaption></figure>
+</section>
+</div>
+
+<h2>Part B — Filter buttons with radio buttons</h2>
+<p>A <strong>radio button</strong> is a round option button where only <em>one</em> in a group can be selected at a time. That's exactly how filters behave. The plan:</p>
+<ol>
+    <li>Four hidden radio buttons (All, Workshop, Repairs, Team) remember which filter is selected.</li>
+    <li>Four visible <code>&lt;label&gt;</code>s styled as pill buttons. Clicking a label selects its radio button.</li>
+    <li>CSS uses <code>:checked</code> to highlight the right label and hide the photos that don't match.</li>
+</ol>
+
+<div class="steps">
+<section class="step">
+<h3>Add the radios and labels</h3>
+<p>Replace <code>&lt;!-- filters go here (Part B) --&gt;</code> with:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> gallery.html</span><span class="code-where">Replace <code>&lt;!-- filters go here (Part B) --&gt;</code></span></figcaption><pre><code><span class="cm">&lt;!-- Hidden radio buttons: they remember which filter is selected --&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;gallery-filter&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;filter-all&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;filter-radio&quot;</span> <span class="na">checked</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;gallery-filter&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;filter-workshop&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;filter-radio&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;gallery-filter&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;filter-repairs&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;filter-radio&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">input</span> <span class="na">type</span><span class="o">=</span><span class="s">&quot;radio&quot;</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;gallery-filter&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;filter-team&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;filter-radio&quot;</span><span class="p">&gt;</span>
+
+<span class="cm">&lt;!-- The visible filter &quot;buttons&quot; are labels for those radio buttons --&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;gallery-filters fade-in&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;filter-all&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;filter-btn&quot;</span><span class="p">&gt;</span>All<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;filter-workshop&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;filter-btn&quot;</span><span class="p">&gt;</span>Workshop<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;filter-repairs&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;filter-btn&quot;</span><span class="p">&gt;</span>Repairs<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">label</span> <span class="na">for</span><span class="o">=</span><span class="s">&quot;filter-team&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;filter-btn&quot;</span><span class="p">&gt;</span>Team<span class="p">&lt;/</span><span class="nt">label</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></figure>
+<ul>
+    <li>All four radios share <code>name="gallery-filter"</code>, which makes them one group: selecting one deselects the others.</li>
+    <li><code>checked</code> on the first one makes “All” selected when the page loads.</li>
+    <li>Each <code>&lt;label for="…"&gt;</code> is connected to the radio with the matching <code>id</code>.</li>
+    <li><strong>The order is essential:</strong> the radios come <em>first</em>, then the filters, then the grid, all inside the same <code>.container</code>.</li>
+</ul>
+</section>
+
+<section class="step">
+<h3>Add the filter CSS</h3>
+<p>Add to the <code>&lt;style&gt;</code> block:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> gallery.html</span><span class="code-where">In the <code>&lt;style&gt;</code> block, below the overlay CSS</span></figcaption><pre><code>/* Filter buttons: hidden radio buttons + visible labels */
+.filter-radio { position: absolute; opacity: 0; width: 0; height: 0; }
+
+.gallery-filters { display: flex; justify-content: center; gap: 0.75rem; margin-bottom: 2.5rem; flex-wrap: wrap; }
+.filter-btn {
+    padding: 0.6rem 1.25rem;
+    border-radius: 50px;
+    border: 1px solid var(--border);
+    background: var(--white);
+    color: var(--dark-gray);
+    font-weight: 500;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: var(--transition);
+}
+.filter-btn:hover { background: var(--primary); color: var(--white); border-color: var(--primary); }
+
+/* Highlight the label of whichever radio button is checked */
+#filter-all:checked ~ .gallery-filters label[for=&quot;filter-all&quot;],
+#filter-workshop:checked ~ .gallery-filters label[for=&quot;filter-workshop&quot;],
+#filter-repairs:checked ~ .gallery-filters label[for=&quot;filter-repairs&quot;],
+#filter-team:checked ~ .gallery-filters label[for=&quot;filter-team&quot;] {
+    background: var(--primary);
+    color: var(--white);
+    border-color: var(--primary);
+}
+
+/* Hide every photo that does NOT match the checked category */
+#filter-workshop:checked ~ .gallery-grid .gallery-item:not([data-category=&quot;workshop&quot;]),
+#filter-repairs:checked ~ .gallery-grid .gallery-item:not([data-category=&quot;repairs&quot;]),
+#filter-team:checked ~ .gallery-grid .gallery-item:not([data-category=&quot;team&quot;]) {
+    display: none;
+}</code></pre></figure>
+<h4>Reading the selectors</h4>
+<p>Take this one:</p>
+<p style="text-align:center"><code>#filter-repairs:checked ~ .gallery-grid .gallery-item:not([data-category="repairs"])</code></p>
+<div class="table-wrap"><table>
+<thead><tr><th>Part</th><th>Meaning</th></tr></thead>
+<tbody>
+<tr><td><code>#filter-repairs:checked</code></td><td>…when the “repairs” radio button is selected,</td></tr>
+<tr><td><code>~ .gallery-grid</code></td><td>…find the gallery grid that comes after it (a later sibling),</td></tr>
+<tr><td><code>.gallery-item</code></td><td>…then every photo inside it</td></tr>
+<tr><td><code>:not([data-category="repairs"])</code></td><td>…whose <code>data-category</code> is <strong>not</strong> “repairs”,</td></tr>
+<tr><td><code>{ display: none; }</code></td><td>…and hide it.</td></tr>
+</tbody></table></div>
+<p>Square brackets <code>[ ]</code> make an <strong>attribute selector</strong>: <code>[data-category="repairs"]</code> matches elements whose attribute has that exact value. The highlight rules work the same way: “when this radio is checked, find the label whose <code>for</code> matches it and colour it blue.”</p>
+<p>The radios are hidden with <code>opacity: 0; width: 0; height: 0;</code> rather than <code>display: none</code>, so keyboard users can still reach them with <kbd>Tab</kbd> and arrow keys.</p>
+<p>Save, then click each filter. Only the matching photos should remain.</p>
+</section>
+</div>
+
+<h2>Part C — The lightbox with <code>:target</code></h2>
+<p>When a link points to <code>#photo-1</code>, the browser adds <code>#photo-1</code> to the end of the address and treats the element with <code>id="photo-1"</code> as the <strong>target</strong>. The CSS <code>:target</code> selector matches that element. So:</p>
+<ul>
+    <li>Each lightbox is hidden (<code>display: none</code>) until it becomes the target, then it's shown (<code>.lightbox:target { display: flex; }</code>).</li>
+    <li>The close button links to <code>#close</code>. There is no element with that id, so no lightbox is the target any more, and it hides again.</li>
+</ul>
+
+<div class="steps">
+<section class="step">
+<h3>Add the first lightbox</h3>
+<p>Lightboxes go <em>after</em> the gallery section. Add this directly above <code>&lt;!-- Footer --&gt;</code>:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> gallery.html</span><span class="code-where">Directly above <code>&lt;!-- Footer --&gt;</code> (after <code>&lt;/section&gt;</code>)</span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;photo-1&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#close&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox-backdrop&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;Close&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#close&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox-close&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;Close&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-times&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=900&amp;h=500&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Main workshop&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></figure>
+<ul>
+    <li><code>id="photo-1"</code> matches the first photo's <code>href="#photo-1"</code>.</li>
+    <li><code>.lightbox-backdrop</code> is an empty link covering the whole dark background, so clicking <em>anywhere</em> outside the photo closes it.</li>
+    <li><code>.lightbox-close</code> is the round ✕ button.</li>
+</ul>
+</section>
+
+<section class="step">
+<h3>Add the lightbox CSS</h3>
+<p>Add to the <code>&lt;style&gt;</code> block:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> gallery.html</span><span class="code-where">In the <code>&lt;style&gt;</code> block, below the filter CSS</span></figcaption><pre><code>/* Lightbox: hidden until its id is in the address bar (#photo-1 etc.) */
+.lightbox {
+    display: none;
+    position: fixed; inset: 0; z-index: 2000;
+    background: rgba(15,23,42,0.95);
+    align-items: center; justify-content: center;
+    padding: 2rem;
+}
+.lightbox:target { display: flex; }
+.lightbox-backdrop { position: absolute; inset: 0; }
+.lightbox img { position: relative; max-width: 90%; max-height: 85vh; border-radius: var(--radius); box-shadow: 0 20px 60px rgba(0,0,0,0.5); }
+.lightbox-close {
+    position: absolute; top: 1.5rem; right: 1.5rem;
+    width: 48px; height: 48px;
+    background: rgba(255,255,255,0.1); border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    color: var(--white); font-size: 1.2rem; cursor: pointer;
+    transition: var(--transition);
+}
+.lightbox-close:hover { background: rgba(255,255,255,0.25); }</code></pre></figure>
+<p><code>position: fixed; inset: 0; z-index: 2000;</code> makes the lightbox cover the entire window, above everything including the navbar (z-index 1000). The image has <code>position: relative</code> so it sits above the backdrop link and doesn't close the lightbox when clicked.</p>
+<p>Save and click the first photo:</p>
+<figure class="shot"><a href="../assets/img/gallery-lightbox.jpg" target="_blank"><img src="../assets/img/gallery-lightbox.jpg" alt="Clicking photo 1 opens it in the lightbox. Click ✕ or the background to close." loading="lazy"></a><figcaption>Clicking photo 1 opens it in the lightbox. Click ✕ or the background to close.</figcaption></figure>
+</section>
+
+<section class="step">
+<h3>Add the other eight lightboxes</h3>
+<p>Here are all nine lightboxes. Replace your single lightbox with this complete block (or add the missing eight below it). Each <code>id</code> must match a photo's <code>href</code>, and each <code>src</code> matches that photo's image:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> gallery.html</span><span class="code-where">Directly above <code>&lt;!-- Footer --&gt;</code></span></figcaption><pre><code><span class="cm">&lt;!-- Lightboxes: one per photo. Each id matches a link above (#photo-1 ...) --&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;photo-1&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#close&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox-backdrop&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;Close&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#close&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox-close&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;Close&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-times&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?w=900&amp;h=500&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Main workshop&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;photo-2&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#close&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox-backdrop&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;Close&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#close&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox-close&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;Close&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-times&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?w=600&amp;h=450&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Phone repair&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;photo-3&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#close&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox-backdrop&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;Close&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#close&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox-close&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;Close&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-times&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&amp;h=450&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Team meeting&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;photo-4&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#close&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox-backdrop&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;Close&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#close&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox-close&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;Close&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-times&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&amp;h=450&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Circuit board&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;photo-5&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#close&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox-backdrop&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;Close&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#close&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox-close&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;Close&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-times&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=900&amp;h=500&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Laptop repair&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;photo-6&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#close&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox-backdrop&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;Close&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#close&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox-close&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;Close&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-times&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&amp;h=450&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Customer service&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;photo-7&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#close&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox-backdrop&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;Close&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#close&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox-close&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;Close&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-times&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1550009158-9ebf69173e03?w=600&amp;h=450&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Tools&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;photo-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#close&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox-backdrop&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;Close&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#close&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox-close&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;Close&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-times&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0?w=600&amp;h=450&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Tablet repair&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;photo-9&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#close&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox-backdrop&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;Close&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;#close&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;lightbox-close&quot;</span> <span class="na">aria-label</span><span class="o">=</span><span class="s">&quot;Close&quot;</span><span class="p">&gt;&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-times&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1531482615713-2afd69097998?w=600&amp;h=450&amp;fit=crop&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;Team photo&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></figure>
+</section>
+
+<section class="step">
+<h3>Make it responsive</h3>
+<p>Add at the very end of the <code>&lt;style&gt;</code> block:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> gallery.html</span><span class="code-where">At the very end of the <code>&lt;style&gt;</code> block</span></figcaption><pre><code>@media (max-width: 1024px) {
+    .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    .gallery-item.wide { grid-column: span 2; }
+}
+@media (max-width: 768px) {
+    .gallery-grid { grid-template-columns: 1fr; }
+    .gallery-item.wide { grid-column: span 1; }
+}</code></pre></figure>
+<p>Two columns on tablets and one on phones, where wide photos span just one column.</p>
+<div class="shot-row">
+<figure class="shot tall"><a href="../assets/img/gallery-full.jpg" target="_blank"><img src="../assets/img/gallery-full.jpg" alt="The finished Gallery page, desktop" loading="lazy"></a><figcaption>The finished Gallery page, desktop</figcaption></figure>
+<figure class="shot tall"><a href="../assets/img/gallery-mobile-full.jpg" target="_blank"><img src="../assets/img/gallery-mobile-full.jpg" alt="The Gallery page on a phone" loading="lazy"></a><figcaption>The Gallery page on a phone</figcaption></figure>
+</div>
+</section>
+</div>
+
+<div class="checkpoint">
+    <h3><i class="fas fa-flag-checkered"></i> Checkpoint</h3>
+    <ul>
+        <li><label><input type="checkbox"><span>Nine photos in a 3-column grid, with photos 1 and 5 twice as wide.</span></label></li>
+        <li><label><input type="checkbox"><span>Hovering a photo zooms it and shows its caption.</span></label></li>
+        <li><label><input type="checkbox"><span>Each filter button shows only its 3 photos and turns blue; “All” shows all 9.</span></label></li>
+        <li><label><input type="checkbox"><span>Clicking any photo opens the <em>right</em> photo in the lightbox; ✕ or the background closes it.</span></label></li>
+    </ul>
+    <p>Compare with the <a href="../reference/gallery-html.html">complete <code>gallery.html</code></a>.</p>
+</div>
+
+<div class="callout mistake"><p class="callout-title"><i class="fas fa-bug"></i> Common mistakes</p>
+<ul>
+<li><strong>Filters do nothing:</strong> the radios must come <em>before</em> <code>.gallery-filters</code> and <code>.gallery-grid</code>, inside the same parent. Check that each <code>id</code> matches the selector exactly (<code>filter-repairs</code>, not <code>filter-repair</code>).</li>
+<li><strong>A filter hides everything:</strong> check the spelling of <code>data-category</code> values. They must exactly match the selector (<code>repairs</code>, lowercase).</li>
+<li><strong>The wrong photo opens:</strong> a photo's <code>href="#photo-3"</code> must match <code>id="photo-3"</code> on the right lightbox.</li>
+<li><strong>The Back button reopens a photo:</strong> that's normal. Each opened photo is added to the browser history, because the address changed.</li>
+</ul></div>
+
+<nav class="pager"><a class="pager-card prev" href="../lessons/16-blog.html"><small>← Previous</small><strong>Lesson 16 · The Blog Page</strong></a><a class="pager-card next" href="../lessons/18-contact.html"><small>Next →</small><strong>Lesson 18 · The Contact Page: Forms, Map &amp; FAQ</strong></a></nav>
+        </main>
+    </div>
+    <footer class="site-foot">TechFix Pro HTML &amp; CSS Guide · Built with HTML &amp; CSS only · Photos from Unsplash</footer>
+</body>
+</html>

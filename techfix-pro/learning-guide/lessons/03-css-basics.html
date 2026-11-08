@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics · TechFix Pro HTML &amp; CSS Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/guide.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="../index.html"><i class="fas fa-microchip"></i> TechFix Pro <span>HTML &amp; CSS Guide</span></a>
+        <a class="topbar-link" href="../solution/index.html" target="_blank"><i class="fas fa-eye"></i> <span>View finished site</span></a>
+    </header>
+    <div class="layout">
+        <aside class="sidebar">
+            <details class="toc-mobile">
+                <summary><i class="fas fa-list"></i> All lessons</summary>
+                <p class="toc-part">Start Here</p><ol class="toc-list">
+<li><a href="../index.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Welcome &amp; how to use this guide</span></a></li>
+</ol>
+<p class="toc-part">Part 1 · Getting Started</p><ol class="toc-list">
+<li><a href="../lessons/01-setup.html"><span class="toc-num">1</span><span>Setting up your computer</span></a></li>
+<li><a href="../lessons/02-html-basics.html"><span class="toc-num">2</span><span>HTML basics</span></a></li>
+<li><a href="../lessons/03-css-basics.html" aria-current="page" class="current"><span class="toc-num">3</span><span>CSS basics</span></a></li>
+<li><a href="../lessons/04-project-setup.html"><span class="toc-num">4</span><span>Creating the project</span></a></li>
+</ol>
+<p class="toc-part">Part 2 · Shared Styles &amp; Layout</p><ol class="toc-list">
+<li><a href="../lessons/05-design-system.html"><span class="toc-num">5</span><span>The design system</span></a></li>
+<li><a href="../lessons/06-buttons-headers.html"><span class="toc-num">6</span><span>Buttons &amp; headings</span></a></li>
+<li><a href="../lessons/07-navbar.html"><span class="toc-num">7</span><span>The navigation bar</span></a></li>
+<li><a href="../lessons/08-footer.html"><span class="toc-num">8</span><span>The footer</span></a></li>
+<li><a href="../lessons/09-responsive.html"><span class="toc-num">9</span><span>Responsive design &amp; animation</span></a></li>
+</ol>
+<p class="toc-part">Part 3 · Building the Pages</p><ol class="toc-list">
+<li><a href="../lessons/10-home-hero.html"><span class="toc-num">10</span><span>Home: hero</span></a></li>
+<li><a href="../lessons/11-home-services-about.html"><span class="toc-num">11</span><span>Home: services &amp; about</span></a></li>
+<li><a href="../lessons/12-home-news-newsletter.html"><span class="toc-num">12</span><span>Home: news &amp; newsletter</span></a></li>
+<li><a href="../lessons/13-home-testimonials-clients.html"><span class="toc-num">13</span><span>Home: testimonials &amp; clients</span></a></li>
+<li><a href="../lessons/14-about.html"><span class="toc-num">14</span><span>About page</span></a></li>
+<li><a href="../lessons/15-services.html"><span class="toc-num">15</span><span>Services page</span></a></li>
+<li><a href="../lessons/16-blog.html"><span class="toc-num">16</span><span>Blog page</span></a></li>
+<li><a href="../lessons/17-gallery.html"><span class="toc-num">17</span><span>Gallery page</span></a></li>
+<li><a href="../lessons/18-contact.html"><span class="toc-num">18</span><span>Contact page</span></a></li>
+</ol>
+<p class="toc-part">Part 4 · Polish &amp; Practice</p><ol class="toc-list">
+<li><a href="../lessons/19-images-organization.html"><span class="toc-num">19</span><span>Images &amp; organisation</span></a></li>
+<li><a href="../lessons/20-troubleshooting.html"><span class="toc-num">20</span><span>Troubleshooting guide</span></a></li>
+<li><a href="../lessons/21-final-checklist.html"><span class="toc-num">21</span><span>Exercises &amp; final checklist</span></a></li>
+<li><a href="../lessons/glossary.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Glossary of terms</span></a></li>
+</ol>
+<p class="toc-part">Reference code</p><ol class="toc-list toc-ref">
+<li><a href="../reference/index-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>index.html</span></a></li>
+<li><a href="../reference/about-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>about.html</span></a></li>
+<li><a href="../reference/services-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>services.html</span></a></li>
+<li><a href="../reference/blog-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>blog.html</span></a></li>
+<li><a href="../reference/gallery-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>gallery.html</span></a></li>
+<li><a href="../reference/contact-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>contact.html</span></a></li>
+<li><a href="../reference/styles-css.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>styles.css</span></a></li>
+</ol>
+            </details>
+            <nav class="toc-desktop" aria-label="Lessons"><p class="toc-part">Start Here</p><ol class="toc-list">
+<li><a href="../index.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Welcome &amp; how to use this guide</span></a></li>
+</ol>
+<p class="toc-part">Part 1 · Getting Started</p><ol class="toc-list">
+<li><a href="../lessons/01-setup.html"><span class="toc-num">1</span><span>Setting up your computer</span></a></li>
+<li><a href="../lessons/02-html-basics.html"><span class="toc-num">2</span><span>HTML basics</span></a></li>
+<li><a href="../lessons/03-css-basics.html" aria-current="page" class="current"><span class="toc-num">3</span><span>CSS basics</span></a></li>
+<li><a href="../lessons/04-project-setup.html"><span class="toc-num">4</span><span>Creating the project</span></a></li>
+</ol>
+<p class="toc-part">Part 2 · Shared Styles &amp; Layout</p><ol class="toc-list">
+<li><a href="../lessons/05-design-system.html"><span class="toc-num">5</span><span>The design system</span></a></li>
+<li><a href="../lessons/06-buttons-headers.html"><span class="toc-num">6</span><span>Buttons &amp; headings</span></a></li>
+<li><a href="../lessons/07-navbar.html"><span class="toc-num">7</span><span>The navigation bar</span></a></li>
+<li><a href="../lessons/08-footer.html"><span class="toc-num">8</span><span>The footer</span></a></li>
+<li><a href="../lessons/09-responsive.html"><span class="toc-num">9</span><span>Responsive design &amp; animation</span></a></li>
+</ol>
+<p class="toc-part">Part 3 · Building the Pages</p><ol class="toc-list">
+<li><a href="../lessons/10-home-hero.html"><span class="toc-num">10</span><span>Home: hero</span></a></li>
+<li><a href="../lessons/11-home-services-about.html"><span class="toc-num">11</span><span>Home: services &amp; about</span></a></li>
+<li><a href="../lessons/12-home-news-newsletter.html"><span class="toc-num">12</span><span>Home: news &amp; newsletter</span></a></li>
+<li><a href="../lessons/13-home-testimonials-clients.html"><span class="toc-num">13</span><span>Home: testimonials &amp; clients</span></a></li>
+<li><a href="../lessons/14-about.html"><span class="toc-num">14</span><span>About page</span></a></li>
+<li><a href="../lessons/15-services.html"><span class="toc-num">15</span><span>Services page</span></a></li>
+<li><a href="../lessons/16-blog.html"><span class="toc-num">16</span><span>Blog page</span></a></li>
+<li><a href="../lessons/17-gallery.html"><span class="toc-num">17</span><span>Gallery page</span></a></li>
+<li><a href="../lessons/18-contact.html"><span class="toc-num">18</span><span>Contact page</span></a></li>
+</ol>
+<p class="toc-part">Part 4 · Polish &amp; Practice</p><ol class="toc-list">
+<li><a href="../lessons/19-images-organization.html"><span class="toc-num">19</span><span>Images &amp; organisation</span></a></li>
+<li><a href="../lessons/20-troubleshooting.html"><span class="toc-num">20</span><span>Troubleshooting guide</span></a></li>
+<li><a href="../lessons/21-final-checklist.html"><span class="toc-num">21</span><span>Exercises &amp; final checklist</span></a></li>
+<li><a href="../lessons/glossary.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Glossary of terms</span></a></li>
+</ol>
+<p class="toc-part">Reference code</p><ol class="toc-list toc-ref">
+<li><a href="../reference/index-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>index.html</span></a></li>
+<li><a href="../reference/about-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>about.html</span></a></li>
+<li><a href="../reference/services-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>services.html</span></a></li>
+<li><a href="../reference/blog-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>blog.html</span></a></li>
+<li><a href="../reference/gallery-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>gallery.html</span></a></li>
+<li><a href="../reference/contact-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>contact.html</span></a></li>
+<li><a href="../reference/styles-css.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>styles.css</span></a></li>
+</ol></nav>
+        </aside>
+        <main class="content">
+<div class="progress"><span>Lesson 3 of 21</span><div class="progress-bar"><div style="width:14%"></div></div><span>14%</span></div>
+
+<header class="lesson-head">
+    <p class="eyebrow">Lesson 3 · Getting Started</p>
+    <h1>CSS Basics</h1>
+    <p class="lead">CSS (Cascading Style Sheets) controls how HTML <em>looks</em>. In this lesson you will write your first stylesheet, link it to a page, and learn the core ideas that every later lesson relies on: selectors, properties, colours, units and the box model.</p>
+    <ul class="lesson-facts"><li><i class="far fa-clock"></i>About 75 minutes</li><li><i class="far fa-file"></i>Creates: <code>practice/style.css</code></li><li><i class="far fa-pen-to-square"></i>Edits: <code>practice/hello.html</code></li></ul>
+</header>
+
+<div class="goals">
+    <h3>By the end of this lesson you will be able to</h3>
+    <ul>
+        <li>Read and write a CSS rule.</li>
+        <li>Link a CSS file to an HTML page.</li>
+        <li>Target elements with element, class and id selectors.</li>
+        <li>Use colours, units (<code>px</code>, <code>rem</code>, <code>%</code>, <code>vh</code>) and the box model.</li>
+        <li>Use <code>:hover</code> and the browser's Developer Tools.</li>
+    </ul>
+</div>
+
+<h2>Anatomy of a CSS rule</h2>
+<p>A CSS file is a list of <strong>rules</strong>. Each rule says <em>which elements</em> to style and <em>how</em>:</p>
+<div class="anatomy">
+<span class="a a-sel">h1<small>selector</small></span> { <span class="a a-attr">color<small>property</small></span>: <span class="a a-val">#2563eb<small>value</small></span>; <span class="a a-attr">font-size<small>property</small></span>: <span class="a a-val">2rem<small>value</small></span>; }
+</div>
+<ul>
+    <li>The <strong>selector</strong> picks which HTML elements the rule applies to (here, every <code>&lt;h1&gt;</code>).</li>
+    <li>Inside the curly braces <code>{ }</code> go <strong>declarations</strong>: a <strong>property</strong>, a colon <code>:</code>, a <strong>value</strong>, and a semicolon <code>;</code>.</li>
+</ul>
+<div class="callout mistake"><p class="callout-title"><i class="fas fa-bug"></i> The #1 CSS mistake</p><p>Forgetting a <strong>semicolon</strong> <code>;</code> or a <strong>closing brace</strong> <code>}</code>. When that happens, the browser silently ignores the broken declaration — and sometimes everything after it. If a style “does nothing”, check the punctuation first.</p></div>
+
+<h2>Three places CSS can live</h2>
+<p>TechFix Pro uses <strong>all three</strong>, so it is worth knowing each one:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Where</th><th>How it looks</th><th>When TechFix Pro uses it</th></tr></thead>
+<tbody>
+<tr><td><strong>External stylesheet</strong> (a separate <code>.css</code> file)</td><td><code>&lt;link rel="stylesheet" href="styles.css"&gt;</code> in the <code>&lt;head&gt;</code></td><td>Styles shared by <em>every</em> page: colours, buttons, navbar, footer. One file → change it once, every page updates.</td></tr>
+<tr><td><strong>Internal stylesheet</strong> (a <code>&lt;style&gt;</code> tag)</td><td><code>&lt;style&gt; … &lt;/style&gt;</code> in the <code>&lt;head&gt;</code></td><td>Styles used on <em>one page only</em>, like the Home page's hero.</td></tr>
+<tr><td><strong>Inline style</strong> (a <code>style</code> attribute)</td><td><code>&lt;a style="width:100%"&gt;</code></td><td>A tiny one-off tweak to a single element. Use sparingly.</td></tr>
+</tbody></table></div>
+
+<div class="steps">
+<section class="step">
+<h3>Create <code>style.css</code> and link it</h3>
+<p>In your <code>practice</code> folder, create a new file called <code>style.css</code> (leave it empty for now).</p>
+<p>Open <code>hello.html</code>. Inside the <code>&lt;head&gt;</code>, on a new line directly <strong>below</strong> the <code>&lt;title&gt;</code> line, add:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> practice/hello.html</span><span class="code-where">In <code>&lt;head&gt;</code>, below <code>&lt;title&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style.css&quot;</span><span class="p">&gt;</span></code></pre></figure>
+<p><code>rel="stylesheet"</code> says “this is a stylesheet”, and <code>href="style.css"</code> is the <strong>path</strong> to the file. Because <code>style.css</code> is in the <em>same folder</em> as <code>hello.html</code>, the path is just its name.</p>
+</section>
+
+<section class="step">
+<h3>Write your first rules</h3>
+<p>Open <code>style.css</code> and type:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-css3-alt"></i> practice/style.css</span><span class="code-where">Start of the file</span></figcaption><pre><code><span class="c">/* My first stylesheet */</span>
+
+<span class="nt">body</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">font-family</span><span class="p">:</span><span class="w"> </span><span class="n">Arial</span><span class="p">,</span><span class="w"> </span><span class="kc">sans-serif</span><span class="p">;</span>
+<span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#f8fafc</span><span class="p">;</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#0f172a</span><span class="p">;</span>
+<span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">h1</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#2563eb</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+<ul>
+    <li><code>/* … */</code> is a CSS comment.</li>
+    <li><code>font-family</code> lists fonts to try, in order. <code>sans-serif</code> is a fallback meaning “any font without little feet”.</li>
+    <li><code>background-color</code> paints the background; <code>color</code> sets the <em>text</em> colour.</li>
+    <li><code>padding: 20px</code> adds 20 pixels of space inside the edges of the page.</li>
+</ul>
+<p>Save both files and look at the browser:</p>
+<figure class="shot"><a href="../assets/img/practice-css-1.png" target="_blank"><img src="../assets/img/practice-css-1.png" alt="A new font, a light grey background and a blue heading" loading="lazy"></a><figcaption>A new font, a light grey background and a blue heading</figcaption></figure>
+<div class="callout mistake"><p class="callout-title"><i class="fas fa-bug"></i> Nothing changed?</p><p>Then the CSS file is not linked. Check that the file is called exactly <code>style.css</code>, that it is in the same folder as <code>hello.html</code>, and that the <code>href</code> matches the file name letter for letter.</p></div>
+</section>
+
+<section class="step">
+<h3>Style the image and links</h3>
+<p>Add these rules at the bottom of <code>style.css</code>:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-css3-alt"></i> practice/style.css</span><span class="code-where">Add at the bottom of <code>style.css</code></span></figcaption><pre><code><span class="nt">img</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">width</span><span class="p">:</span><span class="w"> </span><span class="mi">300</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#2563eb</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="nt">a</span><span class="p">:</span><span class="nd">hover</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#f59e0b</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+<p><code>border-radius</code> rounds the corners. <code>a:hover</code> is a <strong>pseudo-class</strong>: it applies only while the mouse pointer is <em>over</em> the link. Hover over “Google” to see it turn amber.</p>
+<figure class="shot"><a href="../assets/img/practice-css-2.png" target="_blank"><img src="../assets/img/practice-css-2.png" alt="The image is now smaller with rounded corners" loading="lazy"></a><figcaption>The image is now smaller with rounded corners</figcaption></figure>
+</section>
+
+<section class="step">
+<h3>Classes and ids</h3>
+<p>Styling <em>every</em> <code>&lt;p&gt;</code> the same is rarely what you want. To style <strong>specific</strong> elements, give them a <code>class</code> (or an <code>id</code>) in the HTML, then target that name in CSS.</p>
+<p>In <code>hello.html</code>, add this <strong>just above</strong> <code>&lt;/body&gt;</code>:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> practice/hello.html</span><span class="code-where">Just above <code>&lt;/body&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;card&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;special&quot;</span><span class="p">&gt;</span>I am inside a card<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Cards are just a <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;highlight&quot;</span><span class="p">&gt;</span>div<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span> with some CSS.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></figure>
+<p>Then add to the bottom of <code>style.css</code>:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-css3-alt"></i> practice/style.css</span><span class="code-where">Add at the bottom of <code>style.css</code></span></figcaption><pre><code><span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="kc">white</span><span class="p">;</span>
+<span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="mh">#e2e8f0</span><span class="p">;</span>
+<span class="w">    </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">margin-top</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">max-width</span><span class="p">:</span><span class="w"> </span><span class="mi">400</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">highlight</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="mh">#f59e0b</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">#</span><span class="nn">special</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">font-weight</span><span class="p">:</span><span class="w"> </span><span class="kc">bold</span><span class="p">;</span>
+<span class="p">}</span></code></pre></figure>
+<div class="table-wrap"><table>
+<thead><tr><th>In HTML</th><th>In CSS</th><th>Rule of thumb</th></tr></thead>
+<tbody>
+<tr><td><code>class="card"</code></td><td><code>.card</code> (starts with a <strong>dot</strong>)</td><td>Reusable — many elements can share a class. An element can have several: <code>class="btn btn-primary"</code>. <strong>TechFix Pro uses classes for almost everything.</strong></td></tr>
+<tr><td><code>id="special"</code></td><td><code>#special</code> (starts with a <strong>hash</strong>)</td><td>Unique — only <em>one</em> element per page may have a given id. Used for links that jump to a spot on a page (and for the gallery lightbox in Lesson 17).</td></tr>
+</tbody></table></div>
+<figure class="shot"><a href="../assets/img/practice-css-3.png" target="_blank"><img src="../assets/img/practice-css-3.png" alt="The finished practice page with a white “card”" loading="lazy"></a><figcaption>The finished practice page with a white “card”</figcaption></figure>
+</section>
+</div>
+
+<div class="callout term"><p class="callout-title"><i class="fas fa-book"></i> Class names can be anything — but be descriptive</p><p>Use lowercase words joined with hyphens, describing <em>what the thing is</em>: <code>service-card</code>, <code>hero-buttons</code>, <code>footer-grid</code>. Never start with a number and never use spaces (a space separates two different classes).</p></div>
+
+<h2>More selectors you will meet</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Selector</th><th>Selects…</th><th>Example from TechFix Pro</th></tr></thead>
+<tbody>
+<tr><td><code>.a .b</code> (space)</td><td>any <code>.b</code> that is <em>inside</em> an <code>.a</code> (a “descendant”)</td><td><code>.hero h1</code> — only the h1 inside the hero</td></tr>
+<tr><td><code>.a &gt; .b</code></td><td><code>.b</code> that is a <em>direct child</em> of <code>.a</code></td><td><code>.nav-links &gt; li</code></td></tr>
+<tr><td><code>.a, .b</code> (comma)</td><td>both <code>.a</code> <em>and</em> <code>.b</code> (a group)</td><td><code>.services-grid, .news-grid { … }</code></td></tr>
+<tr><td><code>.a.b</code> (no space)</td><td>an element that has <em>both</em> classes</td><td><code>.pricing-card.featured</code></td></tr>
+<tr><td><code>:hover</code></td><td>while the mouse is over it</td><td><code>.btn-primary:hover</code></td></tr>
+<tr><td><code>::before</code> / <code>::after</code></td><td>an invisible extra “box” CSS can create before/after the content</td><td>The quote mark on testimonial cards</td></tr>
+<tr><td><code>*</code></td><td>every element</td><td>The reset at the top of <code>styles.css</code></td></tr>
+<tr><td><code>:root</code></td><td>the <code>&lt;html&gt;</code> element</td><td>Where the colour variables live</td></tr>
+</tbody></table></div>
+
+<h2>Colours</h2>
+<ul>
+    <li><strong>Hex codes</strong> like <code>#2563eb</code> — a <code>#</code> followed by 6 characters (red, green, blue in pairs). TechFix Pro's brand blue is <code>#2563eb</code>.</li>
+    <li><strong>rgba()</strong> like <code>rgba(255, 255, 255, 0.92)</code> — red, green, blue (0–255) plus <strong>alpha</strong> (transparency, 0 = invisible, 1 = solid). The navbar uses this to be <em>almost</em> white so the page shows faintly through it.</li>
+    <li><strong>Gradients</strong> like <code>linear-gradient(135deg, #2563eb, #1d4ed8)</code> — a smooth blend between colours at an angle.</li>
+</ul>
+<div class="callout tip"><p class="callout-title"><i class="fas fa-palette"></i> Colour picker</p><p>In VS Code, hover over any colour value in a CSS file. A colour picker appears so you can choose a colour visually.</p></div>
+
+<h2>Units of size</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Unit</th><th>Means</th><th>Typical use</th></tr></thead>
+<tbody>
+<tr><td><code>px</code></td><td>pixels — tiny dots on the screen. Fixed size.</td><td>Borders, shadows, small fixed sizes (<code>72px</code> navbar height)</td></tr>
+<tr><td><code>rem</code></td><td>multiples of the browser's base font size (usually 16px). <code>1.5rem</code> = 24px.</td><td>Font sizes and spacing. Scales if the user enlarges text.</td></tr>
+<tr><td><code>%</code></td><td>a percentage of the parent element</td><td><code>width: 100%</code></td></tr>
+<tr><td><code>vh</code> / <code>vw</code></td><td>1% of the browser window's height / width</td><td><code>min-height: 100vh</code> makes the hero fill the screen</td></tr>
+<tr><td><code>fr</code></td><td>a “fraction” of the free space in a CSS grid</td><td><code>grid-template-columns: 1fr 1fr</code> (Lesson 8)</td></tr>
+</tbody></table></div>
+
+<h2>The box model</h2>
+<p>Every element on a page is a rectangular box made of four layers. Understanding this is the key to controlling spacing:</p>
+<div class="boxmodel">
+    <div class="bm-margin"><span>MARGIN — space outside the border (pushes other boxes away)</span>
+        <div class="bm-border"><span>BORDER — the outline</span>
+            <div class="bm-padding"><span>PADDING — space inside the border</span>
+                <div class="bm-content">CONTENT — the text or image</div>
+            </div>
+        </div>
+    </div>
+</div>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-css3-alt"></i> example.css</span><span class="code-where">Box-model properties</span></figcaption><pre><code><span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">margin-top</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span><span class="w">              </span><span class="c">/* space ABOVE the card, outside it */</span>
+<span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="mh">#e2e8f0</span><span class="p">;</span><span class="w">     </span><span class="c">/* width, style, colour */</span>
+<span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="kt">px</span><span class="p">;</span><span class="w">                 </span><span class="c">/* space between the border and the text */</span>
+<span class="w">    </span><span class="k">max-width</span><span class="p">:</span><span class="w"> </span><span class="mi">400</span><span class="kt">px</span><span class="p">;</span><span class="w">              </span><span class="c">/* never wider than 400px */</span>
+<span class="p">}</span>
+
+<span class="c">/* Shorthand: one value = all 4 sides; two values = top/bottom then left/right */</span>
+<span class="p">.</span><span class="nc">example</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">rem</span><span class="w"> </span><span class="mi">2</span><span class="kt">rem</span><span class="p">;</span><span class="w"> </span><span class="k">margin</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="kc">auto</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w">   </span><span class="c">/* &quot;0 auto&quot; centres a box horizontally */</span></code></pre></figure>
+<p>By default, <code>width</code> does <em>not</em> include padding and border, which makes maths confusing. TechFix Pro fixes this with <code>box-sizing: border-box</code> on every element (Lesson 5), so a 300px-wide box stays 300px wide no matter how much padding you add.</p>
+
+<h2>Block and inline elements</h2>
+<p><strong>Block</strong> elements (<code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>, <code>&lt;h1&gt;</code>, <code>&lt;section&gt;</code>…) start on a new line and stretch the full width. <strong>Inline</strong> elements (<code>&lt;a&gt;</code>, <code>&lt;span&gt;</code>, <code>&lt;strong&gt;</code>, <code>&lt;i&gt;</code>…) sit inside a line of text. You can change this with the <code>display</code> property — and in Lessons 5–9 you will meet the two most powerful values, <code>display: flex</code> and <code>display: grid</code>.</p>
+
+<h2>The “cascade”: which rule wins?</h2>
+<p>When two rules set the same property on the same element, the browser picks a winner:</p>
+<ol>
+    <li><strong>More specific wins.</strong> An id beats a class, and a class beats a plain tag. <code>.hero h1</code> beats <code>h1</code>.</li>
+    <li><strong>If equally specific, the later rule wins.</strong> This is why we usually put general rules first and special cases (like media queries) at the bottom.</li>
+    <li><strong>Inline styles beat stylesheet rules.</strong></li>
+</ol>
+
+<h2>Your best friend: Developer Tools</h2>
+<p>Every browser has built-in <strong>Developer Tools</strong> (DevTools). Right-click anything on a page and choose <strong>Inspect</strong> (or press <kbd>F12</kbd>). You will see:</p>
+<ul>
+    <li>the <strong>HTML</strong> of the page on the left — hover a line to highlight that element;</li>
+    <li>the <strong>CSS rules</strong> applying to it on the right — crossed-out rules are being overridden; a yellow warning triangle means a typo;</li>
+    <li>a diagram of its <strong>box model</strong> (margin, border, padding).</li>
+</ul>
+<p>You can even edit CSS values there to experiment — changes are temporary and vanish when you reload.</p>
+
+<div class="checkpoint">
+    <h3><i class="fas fa-flag-checkered"></i> Checkpoint</h3>
+    <ul>
+        <li><label><input type="checkbox"><span>My practice page matches the final screenshot above (blue heading, rounded image, white card).</span></label></li>
+        <li><label><input type="checkbox"><span>The Google link turns amber when I hover over it.</span></label></li>
+        <li><label><input type="checkbox"><span>I know that <code>.name</code> targets a class and <code>#name</code> targets an id.</span></label></li>
+        <li><label><input type="checkbox"><span>I opened DevTools (<kbd>F12</kbd>) and inspected the card.</span></label></li>
+    </ul>
+</div>
+
+<div class="exercise">
+    <h3><i class="fas fa-dumbbell"></i> Practice</h3>
+    <ol>
+        <li>Give the card a light blue background (<code>#eff6ff</code>) and make its border <code>2px</code> wide and blue.</li>
+        <li>Add a <code>box-shadow</code> to the card: <code>box-shadow: 0 10px 20px rgba(0,0,0,0.1);</code></li>
+        <li>Using DevTools, find out how much <strong>padding</strong> the card has.</li>
+    </ol>
+    <details><summary>Show the answer to 1 and 2</summary>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-css3-alt"></i> practice/style.css</span><span class="code-where">Change the <code>.card</code> rule to</span></figcaption><pre><code><span class="p">.</span><span class="nc">card</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">background-color</span><span class="p">:</span><span class="w"> </span><span class="mh">#eff6ff</span><span class="p">;</span>
+<span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="mh">#2563eb</span><span class="p">;</span>
+<span class="w">    </span><span class="k">border-radius</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">margin-top</span><span class="p">:</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">max-width</span><span class="p">:</span><span class="w"> </span><span class="mi">400</span><span class="kt">px</span><span class="p">;</span>
+<span class="w">    </span><span class="k">box-shadow</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="mi">10</span><span class="kt">px</span><span class="w"> </span><span class="mi">20</span><span class="kt">px</span><span class="w"> </span><span class="nb">rgba</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mf">0.1</span><span class="p">);</span>
+<span class="p">}</span></code></pre></figure>
+    </details>
+</div>
+
+<p>You now know enough HTML and CSS to start the real project. In the next lesson you will set up the TechFix Pro folder and all of its files.</p>
+
+<nav class="pager"><a class="pager-card prev" href="../lessons/02-html-basics.html"><small>← Previous</small><strong>Lesson 2 · HTML Basics</strong></a><a class="pager-card next" href="../lessons/04-project-setup.html"><small>Next →</small><strong>Lesson 4 · Creating the TechFix Pro Project</strong></a></nav>
+        </main>
+    </div>
+    <footer class="site-foot">TechFix Pro HTML &amp; CSS Guide · Built with HTML &amp; CSS only · Photos from Unsplash</footer>
+</body>
+</html>

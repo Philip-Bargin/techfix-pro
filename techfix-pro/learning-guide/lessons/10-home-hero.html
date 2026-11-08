@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page, Part 1: The Hero · TechFix Pro HTML &amp; CSS Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/guide.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="../index.html"><i class="fas fa-microchip"></i> TechFix Pro <span>HTML &amp; CSS Guide</span></a>
+        <a class="topbar-link" href="../solution/index.html" target="_blank"><i class="fas fa-eye"></i> <span>View finished site</span></a>
+    </header>
+    <div class="layout">
+        <aside class="sidebar">
+            <details class="toc-mobile">
+                <summary><i class="fas fa-list"></i> All lessons</summary>
+                <p class="toc-part">Start Here</p><ol class="toc-list">
+<li><a href="../index.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Welcome &amp; how to use this guide</span></a></li>
+</ol>
+<p class="toc-part">Part 1 · Getting Started</p><ol class="toc-list">
+<li><a href="../lessons/01-setup.html"><span class="toc-num">1</span><span>Setting up your computer</span></a></li>
+<li><a href="../lessons/02-html-basics.html"><span class="toc-num">2</span><span>HTML basics</span></a></li>
+<li><a href="../lessons/03-css-basics.html"><span class="toc-num">3</span><span>CSS basics</span></a></li>
+<li><a href="../lessons/04-project-setup.html"><span class="toc-num">4</span><span>Creating the project</span></a></li>
+</ol>
+<p class="toc-part">Part 2 · Shared Styles &amp; Layout</p><ol class="toc-list">
+<li><a href="../lessons/05-design-system.html"><span class="toc-num">5</span><span>The design system</span></a></li>
+<li><a href="../lessons/06-buttons-headers.html"><span class="toc-num">6</span><span>Buttons &amp; headings</span></a></li>
+<li><a href="../lessons/07-navbar.html"><span class="toc-num">7</span><span>The navigation bar</span></a></li>
+<li><a href="../lessons/08-footer.html"><span class="toc-num">8</span><span>The footer</span></a></li>
+<li><a href="../lessons/09-responsive.html"><span class="toc-num">9</span><span>Responsive design &amp; animation</span></a></li>
+</ol>
+<p class="toc-part">Part 3 · Building the Pages</p><ol class="toc-list">
+<li><a href="../lessons/10-home-hero.html" aria-current="page" class="current"><span class="toc-num">10</span><span>Home: hero</span></a></li>
+<li><a href="../lessons/11-home-services-about.html"><span class="toc-num">11</span><span>Home: services &amp; about</span></a></li>
+<li><a href="../lessons/12-home-news-newsletter.html"><span class="toc-num">12</span><span>Home: news &amp; newsletter</span></a></li>
+<li><a href="../lessons/13-home-testimonials-clients.html"><span class="toc-num">13</span><span>Home: testimonials &amp; clients</span></a></li>
+<li><a href="../lessons/14-about.html"><span class="toc-num">14</span><span>About page</span></a></li>
+<li><a href="../lessons/15-services.html"><span class="toc-num">15</span><span>Services page</span></a></li>
+<li><a href="../lessons/16-blog.html"><span class="toc-num">16</span><span>Blog page</span></a></li>
+<li><a href="../lessons/17-gallery.html"><span class="toc-num">17</span><span>Gallery page</span></a></li>
+<li><a href="../lessons/18-contact.html"><span class="toc-num">18</span><span>Contact page</span></a></li>
+</ol>
+<p class="toc-part">Part 4 · Polish &amp; Practice</p><ol class="toc-list">
+<li><a href="../lessons/19-images-organization.html"><span class="toc-num">19</span><span>Images &amp; organisation</span></a></li>
+<li><a href="../lessons/20-troubleshooting.html"><span class="toc-num">20</span><span>Troubleshooting guide</span></a></li>
+<li><a href="../lessons/21-final-checklist.html"><span class="toc-num">21</span><span>Exercises &amp; final checklist</span></a></li>
+<li><a href="../lessons/glossary.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Glossary of terms</span></a></li>
+</ol>
+<p class="toc-part">Reference code</p><ol class="toc-list toc-ref">
+<li><a href="../reference/index-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>index.html</span></a></li>
+<li><a href="../reference/about-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>about.html</span></a></li>
+<li><a href="../reference/services-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>services.html</span></a></li>
+<li><a href="../reference/blog-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>blog.html</span></a></li>
+<li><a href="../reference/gallery-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>gallery.html</span></a></li>
+<li><a href="../reference/contact-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>contact.html</span></a></li>
+<li><a href="../reference/styles-css.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>styles.css</span></a></li>
+</ol>
+            </details>
+            <nav class="toc-desktop" aria-label="Lessons"><p class="toc-part">Start Here</p><ol class="toc-list">
+<li><a href="../index.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Welcome &amp; how to use this guide</span></a></li>
+</ol>
+<p class="toc-part">Part 1 · Getting Started</p><ol class="toc-list">
+<li><a href="../lessons/01-setup.html"><span class="toc-num">1</span><span>Setting up your computer</span></a></li>
+<li><a href="../lessons/02-html-basics.html"><span class="toc-num">2</span><span>HTML basics</span></a></li>
+<li><a href="../lessons/03-css-basics.html"><span class="toc-num">3</span><span>CSS basics</span></a></li>
+<li><a href="../lessons/04-project-setup.html"><span class="toc-num">4</span><span>Creating the project</span></a></li>
+</ol>
+<p class="toc-part">Part 2 · Shared Styles &amp; Layout</p><ol class="toc-list">
+<li><a href="../lessons/05-design-system.html"><span class="toc-num">5</span><span>The design system</span></a></li>
+<li><a href="../lessons/06-buttons-headers.html"><span class="toc-num">6</span><span>Buttons &amp; headings</span></a></li>
+<li><a href="../lessons/07-navbar.html"><span class="toc-num">7</span><span>The navigation bar</span></a></li>
+<li><a href="../lessons/08-footer.html"><span class="toc-num">8</span><span>The footer</span></a></li>
+<li><a href="../lessons/09-responsive.html"><span class="toc-num">9</span><span>Responsive design &amp; animation</span></a></li>
+</ol>
+<p class="toc-part">Part 3 · Building the Pages</p><ol class="toc-list">
+<li><a href="../lessons/10-home-hero.html" aria-current="page" class="current"><span class="toc-num">10</span><span>Home: hero</span></a></li>
+<li><a href="../lessons/11-home-services-about.html"><span class="toc-num">11</span><span>Home: services &amp; about</span></a></li>
+<li><a href="../lessons/12-home-news-newsletter.html"><span class="toc-num">12</span><span>Home: news &amp; newsletter</span></a></li>
+<li><a href="../lessons/13-home-testimonials-clients.html"><span class="toc-num">13</span><span>Home: testimonials &amp; clients</span></a></li>
+<li><a href="../lessons/14-about.html"><span class="toc-num">14</span><span>About page</span></a></li>
+<li><a href="../lessons/15-services.html"><span class="toc-num">15</span><span>Services page</span></a></li>
+<li><a href="../lessons/16-blog.html"><span class="toc-num">16</span><span>Blog page</span></a></li>
+<li><a href="../lessons/17-gallery.html"><span class="toc-num">17</span><span>Gallery page</span></a></li>
+<li><a href="../lessons/18-contact.html"><span class="toc-num">18</span><span>Contact page</span></a></li>
+</ol>
+<p class="toc-part">Part 4 · Polish &amp; Practice</p><ol class="toc-list">
+<li><a href="../lessons/19-images-organization.html"><span class="toc-num">19</span><span>Images &amp; organisation</span></a></li>
+<li><a href="../lessons/20-troubleshooting.html"><span class="toc-num">20</span><span>Troubleshooting guide</span></a></li>
+<li><a href="../lessons/21-final-checklist.html"><span class="toc-num">21</span><span>Exercises &amp; final checklist</span></a></li>
+<li><a href="../lessons/glossary.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Glossary of terms</span></a></li>
+</ol>
+<p class="toc-part">Reference code</p><ol class="toc-list toc-ref">
+<li><a href="../reference/index-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>index.html</span></a></li>
+<li><a href="../reference/about-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>about.html</span></a></li>
+<li><a href="../reference/services-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>services.html</span></a></li>
+<li><a href="../reference/blog-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>blog.html</span></a></li>
+<li><a href="../reference/gallery-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>gallery.html</span></a></li>
+<li><a href="../reference/contact-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>contact.html</span></a></li>
+<li><a href="../reference/styles-css.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>styles.css</span></a></li>
+</ol></nav>
+        </aside>
+        <main class="content">
+<div class="progress"><span>Lesson 10 of 21</span><div class="progress-bar"><div style="width:48%"></div></div><span>48%</span></div>
+
+<header class="lesson-head">
+    <p class="eyebrow">Lesson 10 · Building the Pages</p>
+    <h1>Home Page, Part 1: The Hero</h1>
+    <p class="lead">The “hero” is the big, full-screen welcome area at the top of the Home page: a circuit-board photo, a dark blue tint, a headline, two buttons and three statistics. It teaches one of the most useful CSS skills: <strong>stacking layers</strong> on top of each other.</p>
+    <ul class="lesson-facts"><li><i class="far fa-clock"></i>About 60 minutes</li><li><i class="far fa-pen-to-square"></i>Edits: <code>index.html</code></li></ul>
+</header>
+
+<figure class="shot"><a href="../assets/img/home-hero.jpg" target="_blank"><img src="../assets/img/home-hero.jpg" alt="What you will build: the Home page hero" loading="lazy"></a><figcaption>What you will build: the Home page hero</figcaption></figure>
+
+<div class="goals">
+    <h3>By the end of this lesson you will be able to</h3>
+    <ul>
+        <li>Write page-specific CSS in a <code>&lt;style&gt;</code> block.</li>
+        <li>Stack layers using <code>position: relative</code>/<code>absolute</code>, <code>inset</code> and <code>z-index</code>.</li>
+        <li>Use a background image with <code>background-size: cover</code>, and tint it with a gradient.</li>
+        <li>Make text resize smoothly with <code>clamp()</code>.</li>
+        <li>Centre content in both directions with flexbox.</li>
+    </ul>
+</div>
+
+<h2>Where the Home page CSS goes</h2>
+<p>From now on, each page's own CSS goes in that page's <code>&lt;style&gt;</code> block, in the <code>&lt;head&gt;</code>. Open <code>index.html</code> and find:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> index.html</span><span class="code-where">In the <code>&lt;head&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">style</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="c">/* Page-specific styles go here */</span>
+<span class="p">&lt;/</span><span class="nt">style</span><span class="p">&gt;</span></code></pre></figure>
+<p>Delete the comment line <code>/* Page-specific styles go here */</code>. In every step below, “add to the <code>&lt;style&gt;</code> block” means: <strong>paste just above <code>&lt;/style&gt;</code></strong>, below any CSS you added before.</p>
+<div class="callout tip"><p class="callout-title"><i class="fas fa-indent"></i> About indentation</p><p>Code in this guide is shown starting at the left edge. In your file, the CSS sits inside <code>&lt;style&gt;</code> and the sections sit inside <code>&lt;body&gt;</code>, so they will be indented a little more. Spaces never change how a page works, so don't worry about matching them exactly. <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd> tidies everything up for you.</p></div>
+
+<div class="steps">
+<section class="step">
+<h3>Add the hero's three layers (HTML)</h3>
+<p>In <code>index.html</code>, <strong>delete</strong> the line <code>&lt;!-- PAGE CONTENT GOES HERE --&gt;</code> and type this in its place, between the navbar and the footer:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> index.html</span><span class="code-where">Between <code>&lt;/nav&gt;</code> and <code>&lt;!-- Footer --&gt;</code></span></figcaption><pre><code><span class="cm">&lt;!-- Hero Section --&gt;</span>
+<span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;home&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero-bg&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero-overlay&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero-content&quot;</span><span class="p">&gt;</span>
+        <span class="cm">&lt;!-- hero text and buttons go here (next steps) --&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span></code></pre></figure>
+<p>Three empty boxes, which will become three layers stacked on top of each other:</p>
+<ol>
+    <li><code>.hero-bg</code>, the photo, at the back.</li>
+    <li><code>.hero-overlay</code>, a semi-transparent dark blue tint over the photo, which makes the white text readable.</li>
+    <li><code>.hero-content</code>, the text and buttons, at the front.</li>
+</ol>
+<p>The <code>id="home"</code> gives the section a unique name. A link to <code>#home</code> would jump straight to it.</p>
+</section>
+
+<section class="step">
+<h3>Stack the layers (CSS)</h3>
+<p>Add to the <code>&lt;style&gt;</code> block:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> index.html</span><span class="code-where">In the <code>&lt;style&gt;</code> block of <code>index.html</code></span></figcaption><pre><code>/* ============================================
+   Hero Section with Background Image
+   ============================================ */
+.hero {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 1.5rem 100px;
+    overflow: hidden;
+}
+
+.hero-bg {
+    position: absolute;
+    inset: 0;
+    background: url(&#39;https://images.unsplash.com/photo-1518770660439-4636190af475?w=1920<span class="err">&amp;</span>q=80&#39;) center/cover no-repeat;
+    z-index: 0;
+}
+
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(15, 23, 42, 0.88) 0%, rgba(15, 23, 42, 0.75) 50%, rgba(37, 99, 235, 0.65) 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}</code></pre></figure>
+<h4>The layering technique</h4>
+<ul>
+    <li><code>.hero { position: relative; }</code> makes the hero the <strong>frame</strong> that its absolutely-positioned children are placed inside.</li>
+    <li><code>.hero-bg</code> and <code>.hero-overlay</code> use <code>position: absolute; inset: 0;</code>. <code>inset: 0</code> is shorthand for <code>top: 0; right: 0; bottom: 0; left: 0;</code>, which stretches each layer to fill the whole hero.</li>
+    <li><code>z-index</code> sets the stacking order: photo <code>0</code> (back), tint <code>1</code>, content <code>2</code> (front). The content needs <code>position: relative</code> for its <code>z-index</code> to work.</li>
+    <li><code>overflow: hidden</code> cuts off anything that pokes outside the hero.</li>
+</ul>
+<h4>The background shorthand</h4>
+<p><code>background: url('…') center/cover no-repeat;</code> packs four settings into one line: the image address, its position (<code>center</code>), its size (<code>cover</code> means scale it to fill the box completely, cropping the edges if needed) and <code>no-repeat</code> (don't tile it).</p>
+<h4>The full-screen centred box</h4>
+<p><code>min-height: 100vh</code> makes the hero at least as tall as the browser window. <code>display: flex; align-items: center; justify-content: center;</code> puts the content in the exact centre, both vertically and horizontally. The top padding of 120px keeps the content clear of the fixed navbar.</p>
+<p>Save and look: you should see a full-screen circuit-board photo with a dark blue tint.</p>
+</section>
+
+<section class="step">
+<h3>Add the hero text, buttons and stats (HTML)</h3>
+<p>Replace the comment <code>&lt;!-- hero text and buttons go here (next steps) --&gt;</code> with:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> index.html</span><span class="code-where">Inside <code>&lt;div class=&quot;hero-content&quot;&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero-badge fade-in&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-bolt&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+    Same-Day Repair Available
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fade-in stagger-1&quot;</span><span class="p">&gt;</span>Expert Electronic <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Repair Services<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fade-in stagger-2&quot;</span><span class="p">&gt;</span>From smartphones to laptops, we fix it all with precision and care. Trusted by thousands of customers with a 99% satisfaction rate and genuine parts guarantee.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero-buttons fade-in stagger-3&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;services.html&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-primary btn-lg&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-tools&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+        Our Services
+    <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;contact.html&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-outline btn-lg&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;border-color:rgba(255,255,255,0.4);color:var(--white);&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-phone&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+        Get a Quote
+    <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero-stats fade-in stagger-4&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero-stat&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;number&quot;</span><span class="p">&gt;</span>15K+<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;label&quot;</span><span class="p">&gt;</span>Repairs Done<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero-stat&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;number&quot;</span><span class="p">&gt;</span>99%<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;label&quot;</span><span class="p">&gt;</span>Satisfaction<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero-stat&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;number&quot;</span><span class="p">&gt;</span>10+<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;label&quot;</span><span class="p">&gt;</span>Years Experience<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span></code></pre></figure>
+<ul>
+    <li>The <code>&lt;span&gt;</code> inside the <code>&lt;h1&gt;</code> wraps “Repair Services” so CSS can colour just those words amber.</li>
+    <li>Notice the <code>fade-in</code> and <code>stagger-…</code> classes from Lesson 9. Each part fades in a little after the one before.</li>
+    <li>Each statistic is a <code>.hero-stat</code> box with two <code>&lt;span&gt;</code>s: a big <code>.number</code> and a small <code>.label</code>.</li>
+</ul>
+<div class="callout term"><p class="callout-title"><i class="fas fa-book"></i> The inline style on “Get a Quote”</p><p>The second button uses the outline style, but the hero is dark, so it needs white text and a faint white border. Rather than creating a new class for one button, the original site uses an <strong>inline style</strong>: <code>style="border-color:rgba(255,255,255,0.4);color:var(--white);"</code>. Inline styles beat stylesheet rules, so they override the blue from <code>.btn-outline</code>. Notice that <code>var()</code> works inside inline styles too.</p></div>
+</section>
+
+<section class="step">
+<h3>Style the text, buttons and stats (CSS)</h3>
+<p>Add to the <code>&lt;style&gt;</code> block, below the previous CSS:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> index.html</span><span class="code-where">In the <code>&lt;style&gt;</code> block, below the previous CSS</span></figcaption><pre><code>.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: rgba(255,255,255,0.12);
+    backdrop-filter: blur(10px);
+    color: var(--accent-light);
+    padding: 0.5rem 1.25rem;
+    border-radius: 50px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.hero h1 {
+    font-size: clamp(2.2rem, 5vw, 3.8rem);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 1.25rem;
+    color: var(--white);
+}
+
+.hero h1 span {
+    color: var(--accent-light);
+}
+
+.hero p {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: rgba(255,255,255,0.85);
+    margin-bottom: 2.5rem;
+    max-width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.hero-stat {
+    text-align: center;
+}
+
+.hero-stat .number {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--white);
+    display: block;
+}
+
+.hero-stat .label {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.7);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}</code></pre></figure>
+<ul>
+    <li><strong>The badge</strong> is a “pill”: <code>display: inline-flex</code> so it is only as wide as its text, and <code>border-radius: 50px</code> for fully rounded ends. <code>backdrop-filter: blur(10px)</code> frosts the photo behind it.</li>
+    <li><strong><code>clamp(2.2rem, 5vw, 3.8rem)</code></strong> makes the headline <em>responsive on its own</em>. It is 5% of the window width (<code>5vw</code>), but never smaller than <code>2.2rem</code> and never bigger than <code>3.8rem</code>. Try resizing the window and watch it shrink smoothly.</li>
+    <li><code>.hero h1 span { color: var(--accent-light); }</code> colours only the span, so “Repair Services” turns amber.</li>
+    <li><code>.hero-buttons</code> and <code>.hero-stats</code> are flex rows with <code>flex-wrap: wrap</code>, which lets items drop onto a new line if there isn't room.</li>
+    <li><code>display: block</code> on <code>.number</code> forces the label underneath it onto its own line.</li>
+</ul>
+</section>
+
+<section class="step">
+<h3>Check the complete hero</h3>
+<p>Your complete hero HTML should match this:</p>
+<details class="reveal"><summary>Show the complete hero HTML</summary>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> index.html</span></figcaption><pre><code><span class="cm">&lt;!-- Hero Section --&gt;</span>
+<span class="p">&lt;</span><span class="nt">section</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero&quot;</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;home&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero-bg&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero-overlay&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero-content&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero-badge fade-in&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-bolt&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+            Same-Day Repair Available
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h1</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fade-in stagger-1&quot;</span><span class="p">&gt;</span>Expert Electronic <span class="p">&lt;</span><span class="nt">span</span><span class="p">&gt;</span>Repair Services<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fade-in stagger-2&quot;</span><span class="p">&gt;</span>From smartphones to laptops, we fix it all with precision and care. Trusted by thousands of customers with a 99% satisfaction rate and genuine parts guarantee.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero-buttons fade-in stagger-3&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;services.html&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-primary btn-lg&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-tools&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+                Our Services
+            <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;contact.html&quot;</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;btn btn-outline btn-lg&quot;</span> <span class="na">style</span><span class="o">=</span><span class="s">&quot;border-color:rgba(255,255,255,0.4);color:var(--white);&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">i</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;fas fa-phone&quot;</span><span class="p">&gt;&lt;/</span><span class="nt">i</span><span class="p">&gt;</span>
+                Get a Quote
+            <span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero-stats fade-in stagger-4&quot;</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero-stat&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;number&quot;</span><span class="p">&gt;</span>15K+<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;label&quot;</span><span class="p">&gt;</span>Repairs Done<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero-stat&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;number&quot;</span><span class="p">&gt;</span>99%<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;label&quot;</span><span class="p">&gt;</span>Satisfaction<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+            <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;hero-stat&quot;</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;number&quot;</span><span class="p">&gt;</span>10+<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+                <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;label&quot;</span><span class="p">&gt;</span>Years Experience<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span>
+            <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+        <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">section</span><span class="p">&gt;</span></code></pre></figure>
+</details>
+<p>Save and look at the page. It should match the screenshot at the top of this lesson. Reload and watch the badge, headline, text, buttons and stats fade up one after another.</p>
+</section>
+</div>
+
+<div class="checkpoint">
+    <h3><i class="fas fa-flag-checkered"></i> Checkpoint</h3>
+    <ul>
+        <li><label><input type="checkbox"><span>The hero fills the whole browser window with a tinted circuit-board photo.</span></label></li>
+        <li><label><input type="checkbox"><span>The headline is white, with “Repair Services” in amber.</span></label></li>
+        <li><label><input type="checkbox"><span>There is a blue “Our Services” button and a white-outlined “Get a Quote” button.</span></label></li>
+        <li><label><input type="checkbox"><span>Three statistics sit in a row below the buttons.</span></label></li>
+        <li><label><input type="checkbox"><span>The navbar floats over the top of the photo.</span></label></li>
+    </ul>
+</div>
+
+<h2>Why CSS matters: the same page with no CSS</h2>
+<p>Here is the <em>finished</em> Home page HTML with <strong>all</strong> CSS removed. All the content is there, but none of the design. This is the power of CSS.</p>
+<figure class="shot"><a href="../assets/img/home-html-only.jpg" target="_blank"><img src="../assets/img/home-html-only.jpg" alt="The finished Home page HTML, with no CSS at all" loading="lazy"></a><figcaption>The finished Home page HTML, with no CSS at all</figcaption></figure>
+
+<div class="callout mistake"><p class="callout-title"><i class="fas fa-bug"></i> Common mistakes</p>
+<ul>
+<li><strong>No background photo:</strong> check the <code>url('…')</code> address carefully. It must be inside quotes and brackets, and you must be online.</li>
+<li><strong>The text is hidden behind the tint:</strong> <code>.hero-content</code> needs <em>both</em> <code>position: relative</code> and <code>z-index: 2</code>.</li>
+<li><strong>The photo/tint covers the whole website:</strong> <code>.hero</code> is missing <code>position: relative</code>, so the absolute layers stretch over the entire page instead.</li>
+<li><strong>The CSS doesn't apply at all:</strong> make sure you pasted it <em>inside</em> <code>&lt;style&gt; … &lt;/style&gt;</code>, not after <code>&lt;/style&gt;</code>.</li>
+</ul></div>
+
+<div class="exercise">
+    <h3><i class="fas fa-dumbbell"></i> Experiment</h3>
+    <ol>
+        <li>Temporarily delete the <code>.hero-overlay</code> div from the HTML. How readable is the text now? (Put it back.)</li>
+        <li>Change the overlay's last colour from <code>rgba(37, 99, 235, 0.65)</code> to <code>rgba(220, 38, 38, 0.65)</code> for a red tint. (Change it back.)</li>
+    </ol>
+</div>
+
+<nav class="pager"><a class="pager-card prev" href="../lessons/09-responsive.html"><small>← Previous</small><strong>Lesson 9 · Responsive Design, the Mobile Menu &amp; Animations</strong></a><a class="pager-card next" href="../lessons/11-home-services-about.html"><small>Next →</small><strong>Lesson 11 · Home Page, Part 2: Services &amp; About</strong></a></nav>
+        </main>
+    </div>
+    <footer class="site-foot">TechFix Pro HTML &amp; CSS Guide · Built with HTML &amp; CSS only · Photos from Unsplash</footer>
+</body>
+</html>

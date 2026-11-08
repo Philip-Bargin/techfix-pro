@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Basics · TechFix Pro HTML &amp; CSS Guide</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../assets/guide.css">
+</head>
+<body>
+    <header class="topbar">
+        <a class="brand" href="../index.html"><i class="fas fa-microchip"></i> TechFix Pro <span>HTML &amp; CSS Guide</span></a>
+        <a class="topbar-link" href="../solution/index.html" target="_blank"><i class="fas fa-eye"></i> <span>View finished site</span></a>
+    </header>
+    <div class="layout">
+        <aside class="sidebar">
+            <details class="toc-mobile">
+                <summary><i class="fas fa-list"></i> All lessons</summary>
+                <p class="toc-part">Start Here</p><ol class="toc-list">
+<li><a href="../index.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Welcome &amp; how to use this guide</span></a></li>
+</ol>
+<p class="toc-part">Part 1 · Getting Started</p><ol class="toc-list">
+<li><a href="../lessons/01-setup.html"><span class="toc-num">1</span><span>Setting up your computer</span></a></li>
+<li><a href="../lessons/02-html-basics.html" aria-current="page" class="current"><span class="toc-num">2</span><span>HTML basics</span></a></li>
+<li><a href="../lessons/03-css-basics.html"><span class="toc-num">3</span><span>CSS basics</span></a></li>
+<li><a href="../lessons/04-project-setup.html"><span class="toc-num">4</span><span>Creating the project</span></a></li>
+</ol>
+<p class="toc-part">Part 2 · Shared Styles &amp; Layout</p><ol class="toc-list">
+<li><a href="../lessons/05-design-system.html"><span class="toc-num">5</span><span>The design system</span></a></li>
+<li><a href="../lessons/06-buttons-headers.html"><span class="toc-num">6</span><span>Buttons &amp; headings</span></a></li>
+<li><a href="../lessons/07-navbar.html"><span class="toc-num">7</span><span>The navigation bar</span></a></li>
+<li><a href="../lessons/08-footer.html"><span class="toc-num">8</span><span>The footer</span></a></li>
+<li><a href="../lessons/09-responsive.html"><span class="toc-num">9</span><span>Responsive design &amp; animation</span></a></li>
+</ol>
+<p class="toc-part">Part 3 · Building the Pages</p><ol class="toc-list">
+<li><a href="../lessons/10-home-hero.html"><span class="toc-num">10</span><span>Home: hero</span></a></li>
+<li><a href="../lessons/11-home-services-about.html"><span class="toc-num">11</span><span>Home: services &amp; about</span></a></li>
+<li><a href="../lessons/12-home-news-newsletter.html"><span class="toc-num">12</span><span>Home: news &amp; newsletter</span></a></li>
+<li><a href="../lessons/13-home-testimonials-clients.html"><span class="toc-num">13</span><span>Home: testimonials &amp; clients</span></a></li>
+<li><a href="../lessons/14-about.html"><span class="toc-num">14</span><span>About page</span></a></li>
+<li><a href="../lessons/15-services.html"><span class="toc-num">15</span><span>Services page</span></a></li>
+<li><a href="../lessons/16-blog.html"><span class="toc-num">16</span><span>Blog page</span></a></li>
+<li><a href="../lessons/17-gallery.html"><span class="toc-num">17</span><span>Gallery page</span></a></li>
+<li><a href="../lessons/18-contact.html"><span class="toc-num">18</span><span>Contact page</span></a></li>
+</ol>
+<p class="toc-part">Part 4 · Polish &amp; Practice</p><ol class="toc-list">
+<li><a href="../lessons/19-images-organization.html"><span class="toc-num">19</span><span>Images &amp; organisation</span></a></li>
+<li><a href="../lessons/20-troubleshooting.html"><span class="toc-num">20</span><span>Troubleshooting guide</span></a></li>
+<li><a href="../lessons/21-final-checklist.html"><span class="toc-num">21</span><span>Exercises &amp; final checklist</span></a></li>
+<li><a href="../lessons/glossary.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Glossary of terms</span></a></li>
+</ol>
+<p class="toc-part">Reference code</p><ol class="toc-list toc-ref">
+<li><a href="../reference/index-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>index.html</span></a></li>
+<li><a href="../reference/about-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>about.html</span></a></li>
+<li><a href="../reference/services-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>services.html</span></a></li>
+<li><a href="../reference/blog-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>blog.html</span></a></li>
+<li><a href="../reference/gallery-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>gallery.html</span></a></li>
+<li><a href="../reference/contact-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>contact.html</span></a></li>
+<li><a href="../reference/styles-css.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>styles.css</span></a></li>
+</ol>
+            </details>
+            <nav class="toc-desktop" aria-label="Lessons"><p class="toc-part">Start Here</p><ol class="toc-list">
+<li><a href="../index.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Welcome &amp; how to use this guide</span></a></li>
+</ol>
+<p class="toc-part">Part 1 · Getting Started</p><ol class="toc-list">
+<li><a href="../lessons/01-setup.html"><span class="toc-num">1</span><span>Setting up your computer</span></a></li>
+<li><a href="../lessons/02-html-basics.html" aria-current="page" class="current"><span class="toc-num">2</span><span>HTML basics</span></a></li>
+<li><a href="../lessons/03-css-basics.html"><span class="toc-num">3</span><span>CSS basics</span></a></li>
+<li><a href="../lessons/04-project-setup.html"><span class="toc-num">4</span><span>Creating the project</span></a></li>
+</ol>
+<p class="toc-part">Part 2 · Shared Styles &amp; Layout</p><ol class="toc-list">
+<li><a href="../lessons/05-design-system.html"><span class="toc-num">5</span><span>The design system</span></a></li>
+<li><a href="../lessons/06-buttons-headers.html"><span class="toc-num">6</span><span>Buttons &amp; headings</span></a></li>
+<li><a href="../lessons/07-navbar.html"><span class="toc-num">7</span><span>The navigation bar</span></a></li>
+<li><a href="../lessons/08-footer.html"><span class="toc-num">8</span><span>The footer</span></a></li>
+<li><a href="../lessons/09-responsive.html"><span class="toc-num">9</span><span>Responsive design &amp; animation</span></a></li>
+</ol>
+<p class="toc-part">Part 3 · Building the Pages</p><ol class="toc-list">
+<li><a href="../lessons/10-home-hero.html"><span class="toc-num">10</span><span>Home: hero</span></a></li>
+<li><a href="../lessons/11-home-services-about.html"><span class="toc-num">11</span><span>Home: services &amp; about</span></a></li>
+<li><a href="../lessons/12-home-news-newsletter.html"><span class="toc-num">12</span><span>Home: news &amp; newsletter</span></a></li>
+<li><a href="../lessons/13-home-testimonials-clients.html"><span class="toc-num">13</span><span>Home: testimonials &amp; clients</span></a></li>
+<li><a href="../lessons/14-about.html"><span class="toc-num">14</span><span>About page</span></a></li>
+<li><a href="../lessons/15-services.html"><span class="toc-num">15</span><span>Services page</span></a></li>
+<li><a href="../lessons/16-blog.html"><span class="toc-num">16</span><span>Blog page</span></a></li>
+<li><a href="../lessons/17-gallery.html"><span class="toc-num">17</span><span>Gallery page</span></a></li>
+<li><a href="../lessons/18-contact.html"><span class="toc-num">18</span><span>Contact page</span></a></li>
+</ol>
+<p class="toc-part">Part 4 · Polish &amp; Practice</p><ol class="toc-list">
+<li><a href="../lessons/19-images-organization.html"><span class="toc-num">19</span><span>Images &amp; organisation</span></a></li>
+<li><a href="../lessons/20-troubleshooting.html"><span class="toc-num">20</span><span>Troubleshooting guide</span></a></li>
+<li><a href="../lessons/21-final-checklist.html"><span class="toc-num">21</span><span>Exercises &amp; final checklist</span></a></li>
+<li><a href="../lessons/glossary.html"><span class="toc-num"><i class="fas fa-star"></i></span><span>Glossary of terms</span></a></li>
+</ol>
+<p class="toc-part">Reference code</p><ol class="toc-list toc-ref">
+<li><a href="../reference/index-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>index.html</span></a></li>
+<li><a href="../reference/about-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>about.html</span></a></li>
+<li><a href="../reference/services-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>services.html</span></a></li>
+<li><a href="../reference/blog-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>blog.html</span></a></li>
+<li><a href="../reference/gallery-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>gallery.html</span></a></li>
+<li><a href="../reference/contact-html.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>contact.html</span></a></li>
+<li><a href="../reference/styles-css.html"><span class="toc-num"><i class="fas fa-file-code"></i></span><span>styles.css</span></a></li>
+</ol></nav>
+        </aside>
+        <main class="content">
+<div class="progress"><span>Lesson 2 of 21</span><div class="progress-bar"><div style="width:10%"></div></div><span>10%</span></div>
+
+<header class="lesson-head">
+    <p class="eyebrow">Lesson 2 · Getting Started</p>
+    <h1>HTML Basics</h1>
+    <p class="lead">HTML is the language that describes <em>what is on a page</em>. In this lesson you will learn how HTML is written, the standard “starter” code every page needs, and the dozen tags you will use most often.</p>
+    <ul class="lesson-facts"><li><i class="far fa-clock"></i>About 60 minutes</li><li><i class="far fa-file"></i>Creates: <code>practice/hello.html</code></li></ul>
+</header>
+
+<div class="goals">
+    <h3>By the end of this lesson you will be able to</h3>
+    <ul>
+        <li>Explain what tags, elements and attributes are.</li>
+        <li>Write the HTML “boilerplate” every page starts with.</li>
+        <li>Use headings, paragraphs, bold/italic text, lists, links and images.</li>
+        <li>Group content with <code>&lt;div&gt;</code>, <code>&lt;span&gt;</code> and meaningful section tags.</li>
+        <li>Write comments and indent your code neatly.</li>
+    </ul>
+</div>
+
+<h2>Tags, elements and attributes</h2>
+<p>HTML stands for <strong>HyperText Markup Language</strong>. You “mark up” your content by wrapping it in <strong>tags</strong>. A tag is a word inside angle brackets, like <code>&lt;p&gt;</code>. Most tags come in pairs: an <strong>opening tag</strong> and a <strong>closing tag</strong> (the closing tag has a forward slash <code>/</code>).</p>
+
+<div class="anatomy">
+<span class="a a-tag">&lt;a<small>opening tag</small></span>
+<span class="a a-attr">href<small>attribute name</small></span>=<span class="a a-val">"about.html"<small>attribute value</small></span><span class="a a-tag">&gt;</span><span class="a a-text">About us<small>content</small></span><span class="a a-tag">&lt;/a&gt;<small>closing tag</small></span>
+</div>
+
+<p>The whole thing — opening tag, content and closing tag — is called an <strong>element</strong>. This one is a link that says “About us” and goes to <code>about.html</code> when clicked.</p>
+
+<div class="callout term"><p class="callout-title"><i class="fas fa-book"></i> New terms</p>
+<p><strong>Tag</strong> — a keyword in angle brackets, like <code>&lt;h1&gt;</code>.<br>
+<strong>Element</strong> — an opening tag + its content + its closing tag.<br>
+<strong>Attribute</strong> — extra information inside an opening tag, written as <code>name="value"</code>. For example <code>href="about.html"</code> tells a link where to go.<br>
+<strong>Void element</strong> — an element with no content and no closing tag, like <code>&lt;img&gt;</code> or <code>&lt;br&gt;</code>.</p></div>
+
+<h3>Nesting</h3>
+<p>Elements can sit <strong>inside</strong> other elements. This is called <strong>nesting</strong>. The rule: <em>close tags in the reverse order you opened them</em> — like putting a box inside a box.</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> example.html</span><span class="code-where">✅ Correct vs ❌ wrong nesting</span></figcaption><pre><code><span class="cm">&lt;!-- ✅ Correct: &lt;strong&gt; is closed before &lt;p&gt; --&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>very<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span> important.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="cm">&lt;!-- ❌ Wrong: &lt;p&gt; is closed while &lt;strong&gt; is still open --&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>very<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span> important.<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span></code></pre></figure>
+
+<h2>The page “boilerplate”</h2>
+<p>Every HTML page starts with the same few lines. Developers call this the <strong>boilerplate</strong>. Here is what each line means:</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> example.html</span><span class="code-where">The standard starter code for every page</span></figcaption><pre><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My First Page<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="cm">&lt;!-- Everything you can SEE on the page goes here --&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></figure>
+<div class="table-wrap"><table>
+<thead><tr><th>Line</th><th>What it does</th></tr></thead>
+<tbody>
+<tr><td><code>&lt;!DOCTYPE html&gt;</code></td><td>Tells the browser “this is a modern HTML5 page”. Always the very first line.</td></tr>
+<tr><td><code>&lt;html lang="en"&gt;</code></td><td>Wraps the whole page. <code>lang="en"</code> says the page is in English (helps screen readers and search engines).</td></tr>
+<tr><td><code>&lt;head&gt;</code></td><td>Information <em>about</em> the page that is not shown in the page itself: its title, character set, and links to CSS files.</td></tr>
+<tr><td><code>&lt;meta charset="UTF-8"&gt;</code></td><td>Lets the page show every kind of character correctly (é, ñ, —, ©, emoji…).</td></tr>
+<tr><td><code>&lt;meta name="viewport" …&gt;</code></td><td>Makes the page fit phone screens properly. <strong>Essential</strong> for responsive design (Lesson 9).</td></tr>
+<tr><td><code>&lt;title&gt;</code></td><td>The text shown on the browser tab and in search results.</td></tr>
+<tr><td><code>&lt;body&gt;</code></td><td>Everything visible on the page goes inside here.</td></tr>
+</tbody></table></div>
+
+<div class="callout tip"><p class="callout-title"><i class="fas fa-bolt"></i> Shortcut: let VS Code type it for you</p><p>In an empty <code>.html</code> file, type a single exclamation mark <code>!</code> and press <kbd>Tab</kbd> (or <kbd>Enter</kbd>). VS Code writes the whole boilerplate for you! This feature is called <strong>Emmet</strong>. Just change the text inside <code>&lt;title&gt;</code>.</p></div>
+
+<h2>The tags you will use most</h2>
+<div class="table-wrap"><table>
+<thead><tr><th>Tag</th><th>Purpose</th><th>Used in TechFix Pro for…</th></tr></thead>
+<tbody>
+<tr><td><code>&lt;h1&gt;</code> … <code>&lt;h6&gt;</code></td><td>Headings, from most important (<code>h1</code>) to least (<code>h6</code>). Use one <code>h1</code> per page.</td><td>Page titles, section titles, card titles</td></tr>
+<tr><td><code>&lt;p&gt;</code></td><td>A paragraph of text.</td><td>All body text</td></tr>
+<tr><td><code>&lt;strong&gt;</code>, <code>&lt;em&gt;</code></td><td>Important (bold) and emphasised (italic) text.</td><td>—</td></tr>
+<tr><td><code>&lt;a href="…"&gt;</code></td><td>A link to another page or website.</td><td>Menu links, buttons, “Read More”</td></tr>
+<tr><td><code>&lt;img src="…" alt="…"&gt;</code></td><td>An image. <code>src</code> = where the picture is; <code>alt</code> = a text description.</td><td>Photos everywhere</td></tr>
+<tr><td><code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></td><td>Bulleted list, numbered list, and a list item.</td><td>Menus, feature lists, footer links</td></tr>
+<tr><td><code>&lt;div&gt;</code></td><td>A generic box for grouping things. Has no meaning on its own.</td><td>Cards, grids, wrappers</td></tr>
+<tr><td><code>&lt;span&gt;</code></td><td>A generic wrapper for a few words <em>inside</em> a line.</td><td>Coloured words, small labels</td></tr>
+<tr><td><code>&lt;br&gt;</code></td><td>A line break inside text.</td><td>Addresses on the Contact page</td></tr>
+</tbody></table></div>
+
+<h3>Meaningful (“semantic”) section tags</h3>
+<p>These work like <code>&lt;div&gt;</code> but also say <em>what kind</em> of content they hold. Screen readers and search engines use that meaning. TechFix Pro uses all of these:</p>
+<div class="table-wrap"><table>
+<thead><tr><th>Tag</th><th>Meaning</th></tr></thead>
+<tbody>
+<tr><td><code>&lt;nav&gt;</code></td><td>The main navigation menu.</td></tr>
+<tr><td><code>&lt;header&gt;</code></td><td>An introductory area, like the dark title banner at the top of inner pages.</td></tr>
+<tr><td><code>&lt;section&gt;</code></td><td>A themed group of content, usually with a heading (e.g. “Our Repair Services”).</td></tr>
+<tr><td><code>&lt;article&gt;</code></td><td>A self-contained piece, like a blog post card.</td></tr>
+<tr><td><code>&lt;aside&gt;</code></td><td>Side content, like the blog sidebar.</td></tr>
+<tr><td><code>&lt;footer&gt;</code></td><td>The bottom area of a page.</td></tr>
+</tbody></table></div>
+
+<div class="steps">
+<section class="step">
+<h3>Create <code>hello.html</code></h3>
+<p>In VS Code (with your <code>practice</code> folder open), create a new file called <code>hello.html</code>. Type <code>!</code> and press <kbd>Tab</kbd> to get the boilerplate. Change the title to <code>My First Page</code>.</p>
+</section>
+
+<section class="step">
+<h3>Add content inside <code>&lt;body&gt;</code></h3>
+<p>Click between <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code> and type the following. Read the explanations below while you type.</p>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> practice/hello.html</span><span class="code-where">Inside <code>&lt;body&gt;</code> … <code>&lt;/body&gt;</code></span></figcaption><pre><code><span class="cm">&lt;!-- This is a comment. The browser ignores it. --&gt;</span>
+<span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, I am learning HTML!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Things I want to build<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is a paragraph. Each paragraph starts on a new line.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This sentence has a <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>bold word<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span> and an <span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>italic word<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>A website for TechFix Pro<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>A personal portfolio<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>A blog about my hobbies<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Visit <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.google.com&quot;</span><span class="p">&gt;</span>Google<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> to search the web.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;A green circuit board&quot;</span><span class="p">&gt;</span></code></pre></figure>
+<ul>
+    <li><code>&lt;!-- … --&gt;</code> is a <strong>comment</strong>. The browser ignores it. Use comments to leave notes for yourself.</li>
+    <li><code>&lt;ul&gt;</code> makes a bulleted list; each <code>&lt;li&gt;</code> is one bullet.</li>
+    <li>The <code>&lt;a&gt;</code> tag's <code>href</code> attribute is the address the link goes to.</li>
+    <li>The <code>&lt;img&gt;</code> tag has <em>no closing tag</em>. Its <code>src</code> is the address of a photo on the internet, and <code>alt</code> describes the picture for people who cannot see it.</li>
+</ul>
+</section>
+
+<section class="step">
+<h3>Save and view</h3>
+<p>Save (<kbd>Ctrl</kbd> + <kbd>S</kbd>) and open the page with Live Server (right-click → <strong>Open with Live Server</strong>).</p>
+<figure class="shot"><a href="../assets/img/practice-hello.png" target="_blank"><img src="../assets/img/practice-hello.png" alt="Plain HTML with no CSS yet: black text, default fonts, blue underlined link" loading="lazy"></a><figcaption>Plain HTML with no CSS yet: black text, default fonts, blue underlined link</figcaption></figure>
+<p>It looks plain — that is normal! HTML only describes <em>what</em> is on the page. In the next lesson CSS will make it look good.</p>
+</section>
+
+<section class="step">
+<h3>Here is the complete file</h3>
+<p>Compare your file with this. (The <code>&lt;link&gt;</code> line and the “card” at the bottom are <strong>not</strong> in your file yet — you will add them in Lesson 3, so ignore them for now.)</p>
+<details class="reveal"><summary>Show the full <code>hello.html</code> after Lesson 3</summary>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> practice/hello.html</span></figcaption><pre><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="p">&lt;</span><span class="nt">html</span> <span class="na">lang</span><span class="o">=</span><span class="s">&quot;en&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">head</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">charset</span><span class="o">=</span><span class="s">&quot;UTF-8&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">meta</span> <span class="na">name</span><span class="o">=</span><span class="s">&quot;viewport&quot;</span> <span class="na">content</span><span class="o">=</span><span class="s">&quot;width=device-width, initial-scale=1.0&quot;</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">title</span><span class="p">&gt;</span>My First Page<span class="p">&lt;/</span><span class="nt">title</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">link</span> <span class="na">rel</span><span class="o">=</span><span class="s">&quot;stylesheet&quot;</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;style.css&quot;</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">head</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">body</span><span class="p">&gt;</span>
+    <span class="cm">&lt;!-- This is a comment. The browser ignores it. --&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello, I am learning HTML!<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>Things I want to build<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is a paragraph. Each paragraph starts on a new line.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This sentence has a <span class="p">&lt;</span><span class="nt">strong</span><span class="p">&gt;</span>bold word<span class="p">&lt;/</span><span class="nt">strong</span><span class="p">&gt;</span> and an <span class="p">&lt;</span><span class="nt">em</span><span class="p">&gt;</span>italic word<span class="p">&lt;/</span><span class="nt">em</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>A website for TechFix Pro<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>A personal portfolio<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>A blog about my hobbies<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Visit <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;https://www.google.com&quot;</span><span class="p">&gt;</span>Google<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span> to search the web.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">img</span> <span class="na">src</span><span class="o">=</span><span class="s">&quot;https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&quot;</span> <span class="na">alt</span><span class="o">=</span><span class="s">&quot;A green circuit board&quot;</span><span class="p">&gt;</span>
+
+    <span class="p">&lt;</span><span class="nt">div</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;card&quot;</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">h2</span> <span class="na">id</span><span class="o">=</span><span class="s">&quot;special&quot;</span><span class="p">&gt;</span>I am inside a card<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+        <span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Cards are just a <span class="p">&lt;</span><span class="nt">span</span> <span class="na">class</span><span class="o">=</span><span class="s">&quot;highlight&quot;</span><span class="p">&gt;</span>div<span class="p">&lt;/</span><span class="nt">span</span><span class="p">&gt;</span> with some CSS.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+    <span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">body</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">html</span><span class="p">&gt;</span></code></pre></figure>
+</details>
+</section>
+</div>
+
+<h2>Writing tidy code</h2>
+<p><strong>Indent</strong> nested elements with 4 spaces (or press <kbd>Tab</kbd>) so you can see which element is inside which. The browser does not care about spaces and blank lines — but <em>you</em> will, when you are hunting for a missing tag.</p>
+<div class="callout tip"><p class="callout-title"><i class="fas fa-wand-magic-sparkles"></i> Auto-format</p><p>Press <kbd>Shift</kbd> + <kbd>Alt</kbd> + <kbd>F</kbd> (Windows) or <kbd>Shift</kbd> + <kbd>Option</kbd> + <kbd>F</kbd> (Mac) and VS Code fixes the indentation of the whole file for you.</p></div>
+
+<h3>Special characters</h3>
+<p>Because <code>&lt;</code> and <code>&gt;</code> mean “tag”, a few characters have special codes called <strong>entities</strong>. TechFix Pro uses <code>&amp;copy;</code> to show the © symbol in its footer. Others you may need: <code>&amp;lt;</code> (&lt;), <code>&amp;gt;</code> (&gt;) and <code>&amp;amp;</code> (&amp;).</p>
+
+<div class="checkpoint">
+    <h3><i class="fas fa-flag-checkered"></i> Checkpoint</h3>
+    <ul>
+        <li><label><input type="checkbox"><span>My page shows two headings, two paragraphs, a bulleted list, a link and a photo.</span></label></li>
+        <li><label><input type="checkbox"><span>Clicking “Google” opens Google.</span></label></li>
+        <li><label><input type="checkbox"><span>My comment does <strong>not</strong> appear on the page.</span></label></li>
+        <li><label><input type="checkbox"><span>I can explain the difference between a tag, an element and an attribute.</span></label></li>
+    </ul>
+</div>
+
+<div class="callout mistake"><p class="callout-title"><i class="fas fa-bug"></i> Common mistakes in this lesson</p>
+<ul>
+<li><strong>The image does not show:</strong> check the <code>src</code> address is typed exactly, inside straight quotes <code>"</code>, and that you are online.</li>
+<li><strong>Everything after a point is bold or a link:</strong> you forgot a closing tag (<code>&lt;/strong&gt;</code> or <code>&lt;/a&gt;</code>).</li>
+<li><strong>Curly quotes:</strong> if you copied code from a word processor you may have “smart quotes” (<code>“ ”</code>). HTML needs straight quotes <code>" "</code>.</li>
+</ul></div>
+
+<div class="exercise">
+    <h3><i class="fas fa-dumbbell"></i> Practice</h3>
+    <ol>
+        <li>Add an <code>&lt;h2&gt;</code> called <code>My favourite devices</code> followed by a <strong>numbered</strong> list (<code>&lt;ol&gt;</code>) of three devices.</li>
+        <li>Make the word “paragraph” in the first paragraph italic.</li>
+        <li>Add a link that opens <code>first.html</code> (from Lesson 1). Hint: <code>href="first.html"</code>.</li>
+    </ol>
+    <details><summary>Show a possible answer</summary>
+<figure class="code"><figcaption class="code-head"><span class="code-file"><i class="fa-brands fa-html5"></i> practice/hello.html</span><span class="code-where">One possible answer — add inside <code>&lt;body&gt;</code></span></figcaption><pre><code><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>My favourite devices<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+<span class="p">&lt;</span><span class="nt">ol</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>My phone<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>My laptop<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+    <span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>My headphones<span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="p">&lt;/</span><span class="nt">ol</span><span class="p">&gt;</span>
+
+<span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Go back to <span class="p">&lt;</span><span class="nt">a</span> <span class="na">href</span><span class="o">=</span><span class="s">&quot;first.html&quot;</span><span class="p">&gt;</span>my first page<span class="p">&lt;/</span><span class="nt">a</span><span class="p">&gt;</span>.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span></code></pre></figure>
+    </details>
+</div>
+
+<nav class="pager"><a class="pager-card prev" href="../lessons/01-setup.html"><small>← Previous</small><strong>Lesson 1 · Setting Up Your Computer</strong></a><a class="pager-card next" href="../lessons/03-css-basics.html"><small>Next →</small><strong>Lesson 3 · CSS Basics</strong></a></nav>
+        </main>
+    </div>
+    <footer class="site-foot">TechFix Pro HTML &amp; CSS Guide · Built with HTML &amp; CSS only · Photos from Unsplash</footer>
+</body>
+</html>
